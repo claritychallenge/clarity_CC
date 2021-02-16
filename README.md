@@ -2,6 +2,8 @@
 
 Clarity challenge baseline code for the first enhancement challenge (CEC1).
 
+For more information about the Clarity Challenge please visit http://claritychallenge.org/the-team
+
 ## Installation instructions
 
 The Clarity code is made available as a GitHub repository. To clone the repository, 
