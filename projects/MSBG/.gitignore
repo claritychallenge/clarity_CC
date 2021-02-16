@@ -1,0 +1,13 @@
+__pycache__
+.coverage
+.DS_Store
+.vscode
+env
+env3
+tests/_regtest_outputs
+.cov.xml
+.cov.html
+tmp
+.direnv
+doc/build
+.pytest_cache

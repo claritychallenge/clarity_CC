@@ -1,0 +1,15 @@
+[
+  {
+    "prompt": "'All hot air and not much more,’ said Gloria.",
+    "prompt_id": "AC5_02904",
+    "speaker": "T013",
+    "wavfile": "T013_AC5_02904",
+    "index": 8,
+    "dot": "All hot air and not much more said Gloria",
+    "dataset": "dev",
+    "sex": "F",
+    "nsamples": 157437,
+    "duration": 3.57,
+    "fs": 44100
+  }
+]

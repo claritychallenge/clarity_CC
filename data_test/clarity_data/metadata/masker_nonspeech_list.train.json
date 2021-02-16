@@ -1,0 +1,13 @@
+[
+  {
+    "ID": "CIN_dishwasher_012",
+    "class": "Dishwasher",
+    "source": "Freesound",
+    "file": "https://freesound.org/people/davilca/sounds/157896/",
+    "dataset": "train",
+    "type": "noise",
+    "nsamples": 1190700,
+    "duration": 27,
+    "fs": 44100
+  }
+]

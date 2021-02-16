@@ -1,0 +1,199 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": 
+      {
+        "type": "object",
+        "properties": {
+          "room": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "pattern": "^R[0-9]{5}$"
+              },
+              "dimensions": {
+                "type": "string",
+                "pattern": "^[0-9.]*x[0-9.]*x[0-9.]*$"
+              }
+            },
+            "required": [
+              "name",
+              "dimensions"
+            ]
+          },
+          "hrirfilename": {
+            "type": "string"
+          },
+          "target": {
+            "type": "object",
+            "properties": {
+              "Positions": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ]
+              },
+              "ViewVectors": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string",
+                "pattern": "^T[0-9]{3}_[A-Z0-9]{3}_[0-9]{5}$"
+              },
+              "nsamples": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "Positions",
+              "ViewVectors",
+              "name",
+              "nsamples"
+            ]
+          },
+          "listener": {
+            "type": "object",
+            "properties": {
+              "Positions": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ]
+              },
+              "ViewVectors": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "Positions",
+              "ViewVectors"
+            ]
+          },
+          "interferer": {
+            "type": "object",
+            "properties": {
+              "Positions": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string",
+                "pattern": "^(CIN_[a-z]*_[0-9]{3})|([a-z]{3}_[0-9]{5})$"
+              },
+              "nsamples": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "duration": {
+                "type": "number",
+                "minimum": 0
+              },
+              "type": {
+                "type": "string",
+                "enum": ["noise", "speech"]
+              },
+              "offset": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "Positions",
+              "name",
+              "nsamples",
+              "duration",
+              "type",
+              "offset"            ]
+          },
+          "azimuth_target_listener": {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
+          },
+          "azimuth_interferer_listener": {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
+          },
+          "scene": {
+            "type": "string",
+            "pattern": "^S[0-9]{5}$"
+          },
+          "dataset": {
+            "type": "string",
+            "enum": ["train", "dev", "eval"]
+          },
+          "pre_samples": {
+            "type": "number",
+            "minimum": 0
+          },
+          "post_samples": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "room",
+          "hrirfilename",
+          "target",
+          "listener",
+          "interferer",
+          "azimuth_target_listener",
+          "azimuth_interferer_listener",
+          "scene",
+          "dataset",
+          "pre_samples",
+          "post_samples"
+        ]
+      }
+  }

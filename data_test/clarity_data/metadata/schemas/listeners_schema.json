@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "propertyNames": { "pattern": "^L[0-9]{4}$" },
+    "patternProperties": {
+      "": {
+        "uniqueItems": true,
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string", "pattern": "^L[0-9]{4}$"
+          },
+          "audiogram_cfs": {
+            "type": "array",
+            "minItems": 8,
+            "maxItems": 8,
+            "uniqueItems": true,
+            "items": {
+              "type": "integer"
+            }
+          },
+          "audiogram_levels_l": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "maximum": 80
+            }
+          },
+          "audiogram_levels_r": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": -10,
+              "maximum": 80
+            }
+          }
+        },
+        "required": [
+          "name",
+          "audiogram_cfs",
+          "audiogram_levels_l",
+          "audiogram_levels_r"
+        ]
+      }
+    }
+  }

@@ -1,0 +1,13 @@
+-r requirements.txt
+pytest
+pytest-regtest
+pytest-cov
+pytest-sugar
+pre-commit
+matlab
+matplotlib
+pdoc3
+flake8
+flake8-docstrings
+black
+jinja2

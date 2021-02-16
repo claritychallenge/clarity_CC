@@ -1,0 +1,6 @@
+scipy
+numpy
+wheel
+tqdm
+pandas
+file:../../lib/clarity_core

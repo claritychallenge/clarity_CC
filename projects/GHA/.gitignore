@@ -1,0 +1,14 @@
+__pycache__
+env
+env3
+.coverage
+.DS_Store
+.vscode
+.direnv
+tmp
+master_debug.py
+doc/build
+cfg_files/outputsignals/*.wav
+cfg_files/mergedsignals/*.wav
+cfg_files/log/*_mons.txt
+cfg_files/log/*_config.txt

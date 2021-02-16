@@ -1,0 +1,9 @@
+env
+tmp
+__pycache__
+.vscode
+.hypothesis
+data/output
+.DS_Store
+.direnv
+doc/build

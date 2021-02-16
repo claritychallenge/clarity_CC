@@ -1,0 +1,15 @@
+[
+  {
+    "prompt": "The problem was that you didn't know.",
+    "prompt_id": "JYD_04274",
+    "speaker": "T005",
+    "wavfile": "T005_JYD_04274",
+    "index": 59,
+    "dot": "The problem was that you didn\\'t know",
+    "dataset": "train",
+    "sex": "M",
+    "nsamples": 109809,
+    "duration": 2.49,
+    "fs": 44100
+  }
+]

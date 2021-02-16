@@ -1,0 +1,20 @@
+os: linux
+language: python
+
+python:
+  - "3.7"
+
+install:
+  - pip install -r requirements-dev.txt
+  - cd packages/matlab_mldivide
+  - python setup.py install
+  - cd ../..
+  - cd tests
+  - mv _regtest_outputs_travis _regtest_outputs
+  - cd ..
+
+script:
+  - coverage run --source MSBGhearinglossmodel -m py.test tests
+  - coverage report -m
+  - coverage html -d .cov.html
+  - coverage xml -o .cov.xml

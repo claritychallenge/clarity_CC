@@ -1,0 +1,1359 @@
+2020-08-31 17:04:52 MHA server initialized.
+2020-08-31 17:04:52 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-08-31 17:04:52 Parsing command line argument "cmd=start", please wait.
+2020-08-31 17:04:52 Parsing command line argument "cmd=stop", please wait.
+2020-08-31 17:04:52 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-08-31 17:04:52 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-08-31 17:04:52 Parsing command line argument "cmd=quit", please wait.
+2020-08-31 17:04:52 Command line arguments parsed, accepting network control input.
+2020-08-31 17:04:52 MHA server closed successfully.
+2020-08-31 17:04:52 MHA server initialized.
+2020-08-31 17:04:52 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-08-31 17:04:53 Parsing command line argument "cmd=start", please wait.
+2020-08-31 17:04:53 Parsing command line argument "cmd=stop", please wait.
+2020-08-31 17:04:53 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-08-31 17:04:53 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-08-31 17:04:53 Parsing command line argument "cmd=quit", please wait.
+2020-08-31 17:04:53 Command line arguments parsed, accepting network control input.
+2020-08-31 17:04:53 MHA server closed successfully.
+2020-08-31 17:04:53 MHA server initialized.
+2020-08-31 17:04:53 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-08-31 17:04:53 Parsing command line argument "cmd=start", please wait.
+2020-08-31 17:04:54 Parsing command line argument "cmd=stop", please wait.
+2020-08-31 17:04:54 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-08-31 17:04:54 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-08-31 17:04:54 Parsing command line argument "cmd=quit", please wait.
+2020-08-31 17:04:54 Command line arguments parsed, accepting network control input.
+2020-08-31 17:04:54 MHA server closed successfully.
+2020-08-31 17:04:54 MHA server initialized.
+2020-08-31 17:04:54 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-08-31 17:04:54 Parsing command line argument "cmd=start", please wait.
+2020-08-31 17:04:55 Parsing command line argument "cmd=stop", please wait.
+2020-08-31 17:04:55 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-08-31 17:04:55 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-08-31 17:04:55 Parsing command line argument "cmd=quit", please wait.
+2020-08-31 17:04:55 Command line arguments parsed, accepting network control input.
+2020-08-31 17:04:55 MHA server closed successfully.
+2020-08-31 17:04:55 MHA server initialized.
+2020-08-31 17:04:55 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-08-31 17:04:55 Parsing command line argument "cmd=start", please wait.
+2020-08-31 17:04:56 Parsing command line argument "cmd=stop", please wait.
+2020-08-31 17:04:56 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-08-31 17:04:56 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-08-31 17:04:56 Parsing command line argument "cmd=quit", please wait.
+2020-08-31 17:04:56 Command line arguments parsed, accepting network control input.
+2020-08-31 17:04:56 MHA server closed successfully.
+2020-08-31 17:04:56 MHA server initialized.
+2020-08-31 17:04:56 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-08-31 17:04:56 Parsing command line argument "cmd=start", please wait.
+2020-08-31 17:04:57 Parsing command line argument "cmd=stop", please wait.
+2020-08-31 17:04:57 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-08-31 17:04:57 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-08-31 17:04:57 Parsing command line argument "cmd=quit", please wait.
+2020-08-31 17:04:57 Command line arguments parsed, accepting network control input.
+2020-08-31 17:04:57 MHA server closed successfully.
+2020-09-01 23:23:08 MHA server initialized.
+2020-09-01 23:23:08 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:23:08 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:23:08 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:23:08 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:23:08 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:23:09 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:23:09 Command line arguments parsed, accepting network control input.
+2020-09-01 23:23:09 MHA server closed successfully.
+2020-09-01 23:28:34 MHA server initialized.
+2020-09-01 23:28:34 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:28:34 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:28:34 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:28:34 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:28:34 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:28:35 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:28:35 Command line arguments parsed, accepting network control input.
+2020-09-01 23:28:35 MHA server closed successfully.
+2020-09-01 23:28:52 MHA server initialized.
+2020-09-01 23:28:52 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:28:52 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:28:52 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:28:52 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:28:52 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:28:52 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:28:52 Command line arguments parsed, accepting network control input.
+2020-09-01 23:28:52 MHA server closed successfully.
+2020-09-01 23:29:18 MHA server initialized.
+2020-09-01 23:29:18 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:18 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:18 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:18 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:18 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:18 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:18 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:18 MHA server closed successfully.
+2020-09-01 23:29:18 MHA server initialized.
+2020-09-01 23:29:18 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:18 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:19 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:19 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:19 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:19 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:19 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:19 MHA server closed successfully.
+2020-09-01 23:29:19 MHA server initialized.
+2020-09-01 23:29:19 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:19 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:19 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:19 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:19 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:20 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:20 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:20 MHA server closed successfully.
+2020-09-01 23:29:20 MHA server initialized.
+2020-09-01 23:29:20 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:20 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:20 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:20 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:20 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:20 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:20 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:20 MHA server closed successfully.
+2020-09-01 23:29:20 MHA server initialized.
+2020-09-01 23:29:20 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:20 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:21 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:21 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:21 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:21 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:21 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:21 MHA server closed successfully.
+2020-09-01 23:29:21 MHA server initialized.
+2020-09-01 23:29:21 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:21 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:22 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:22 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:22 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:22 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:22 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:22 MHA server closed successfully.
+2020-09-01 23:29:22 MHA server initialized.
+2020-09-01 23:29:22 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:22 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:22 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:22 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:23 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:23 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:23 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:23 MHA server closed successfully.
+2020-09-01 23:29:23 MHA server initialized.
+2020-09-01 23:29:23 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:23 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:23 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:23 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:23 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:23 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:23 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:23 MHA server closed successfully.
+2020-09-01 23:29:24 MHA server initialized.
+2020-09-01 23:29:24 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:24 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:24 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:24 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:24 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:24 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:24 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:24 MHA server closed successfully.
+2020-09-01 23:29:24 MHA server initialized.
+2020-09-01 23:29:24 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:24 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:25 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:25 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:25 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:25 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:25 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:25 MHA server closed successfully.
+2020-09-01 23:29:25 MHA server initialized.
+2020-09-01 23:29:25 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:25 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:25 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:25 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:25 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:25 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:25 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:25 MHA server closed successfully.
+2020-09-01 23:29:25 MHA server initialized.
+2020-09-01 23:29:25 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:25 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:26 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:26 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:26 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:26 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:26 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:26 MHA server closed successfully.
+2020-09-01 23:29:26 MHA server initialized.
+2020-09-01 23:29:26 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:26 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:26 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:26 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:26 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:26 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:26 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:26 MHA server closed successfully.
+2020-09-01 23:29:26 MHA server initialized.
+2020-09-01 23:29:26 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:27 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:27 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:27 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:27 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:27 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:27 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:27 MHA server closed successfully.
+2020-09-01 23:29:27 MHA server initialized.
+2020-09-01 23:29:27 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:27 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:27 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:27 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:27 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:27 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:27 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:27 MHA server closed successfully.
+2020-09-01 23:29:28 MHA server initialized.
+2020-09-01 23:29:28 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:28 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:28 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:28 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:28 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:28 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:28 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:28 MHA server closed successfully.
+2020-09-01 23:29:28 MHA server initialized.
+2020-09-01 23:29:28 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:28 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:28 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:28 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:28 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:29 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:29 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:29 MHA server closed successfully.
+2020-09-01 23:29:29 MHA server initialized.
+2020-09-01 23:29:29 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:29:29 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:29:29 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:29:29 Parsing command line argument "?save:./log/prerelease_combination2_smooth_blankmod_config.txt", please wait.
+2020-09-01 23:29:29 Parsing command line argument "?savemons:./log/prerelease_combination2_smooth_blankmod_mons.txt", please wait.
+2020-09-01 23:29:29 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:29:29 Command line arguments parsed, accepting network control input.
+2020-09-01 23:29:29 MHA server closed successfully.
+2020-09-01 23:33:12 MHA server initialized.
+2020-09-01 23:33:12 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:33:12 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:33:12 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:33:12 Parsing command line argument "?save:./log/s00000_l0001_HA-output_config.txt", please wait.
+2020-09-01 23:33:12 Parsing command line argument "?savemons:./log/s00000_l0001_HA-output_mons.txt", please wait.
+2020-09-01 23:33:12 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:33:12 Command line arguments parsed, accepting network control input.
+2020-09-01 23:33:12 MHA server closed successfully.
+2020-09-01 23:34:58 MHA server initialized.
+2020-09-01 23:34:58 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:34:59 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:34:59 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:34:59 Parsing command line argument "?save:./log/s00000_l0001_HA-output_config.txt", please wait.
+2020-09-01 23:34:59 Parsing command line argument "?savemons:./log/s00000_l0001_HA-output_mons.txt", please wait.
+2020-09-01 23:34:59 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:34:59 Command line arguments parsed, accepting network control input.
+2020-09-01 23:34:59 MHA server closed successfully.
+2020-09-01 23:34:59 MHA server initialized.
+2020-09-01 23:34:59 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:34:59 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:00 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:00 Parsing command line argument "?save:./log/s00000_l0002_HA-output_config.txt", please wait.
+2020-09-01 23:35:00 Parsing command line argument "?savemons:./log/s00000_l0002_HA-output_mons.txt", please wait.
+2020-09-01 23:35:00 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:00 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:00 MHA server closed successfully.
+2020-09-01 23:35:00 MHA server initialized.
+2020-09-01 23:35:00 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:00 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:00 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:00 Parsing command line argument "?save:./log/s00000_l0003_HA-output_config.txt", please wait.
+2020-09-01 23:35:00 Parsing command line argument "?savemons:./log/s00000_l0003_HA-output_mons.txt", please wait.
+2020-09-01 23:35:01 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:01 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:01 MHA server closed successfully.
+2020-09-01 23:35:01 MHA server initialized.
+2020-09-01 23:35:01 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:01 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:01 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:01 Parsing command line argument "?save:./log/s00001_l0002_HA-output_config.txt", please wait.
+2020-09-01 23:35:01 Parsing command line argument "?savemons:./log/s00001_l0002_HA-output_mons.txt", please wait.
+2020-09-01 23:35:01 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:01 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:01 MHA server closed successfully.
+2020-09-01 23:35:02 MHA server initialized.
+2020-09-01 23:35:02 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:02 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:02 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:02 Parsing command line argument "?save:./log/s00001_l0003_HA-output_config.txt", please wait.
+2020-09-01 23:35:02 Parsing command line argument "?savemons:./log/s00001_l0003_HA-output_mons.txt", please wait.
+2020-09-01 23:35:02 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:02 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:02 MHA server closed successfully.
+2020-09-01 23:35:02 MHA server initialized.
+2020-09-01 23:35:02 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:02 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:03 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:03 Parsing command line argument "?save:./log/s00001_l0004_HA-output_config.txt", please wait.
+2020-09-01 23:35:03 Parsing command line argument "?savemons:./log/s00001_l0004_HA-output_mons.txt", please wait.
+2020-09-01 23:35:03 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:03 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:03 MHA server closed successfully.
+2020-09-01 23:35:03 MHA server initialized.
+2020-09-01 23:35:03 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:03 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:03 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:03 Parsing command line argument "?save:./log/s00002_l0003_HA-output_config.txt", please wait.
+2020-09-01 23:35:04 Parsing command line argument "?savemons:./log/s00002_l0003_HA-output_mons.txt", please wait.
+2020-09-01 23:35:04 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:04 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:04 MHA server closed successfully.
+2020-09-01 23:35:04 MHA server initialized.
+2020-09-01 23:35:04 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:04 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:04 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:04 Parsing command line argument "?save:./log/s00002_l0004_HA-output_config.txt", please wait.
+2020-09-01 23:35:04 Parsing command line argument "?savemons:./log/s00002_l0004_HA-output_mons.txt", please wait.
+2020-09-01 23:35:04 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:04 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:04 MHA server closed successfully.
+2020-09-01 23:35:04 MHA server initialized.
+2020-09-01 23:35:04 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:04 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:05 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:05 Parsing command line argument "?save:./log/s00002_l0005_HA-output_config.txt", please wait.
+2020-09-01 23:35:05 Parsing command line argument "?savemons:./log/s00002_l0005_HA-output_mons.txt", please wait.
+2020-09-01 23:35:05 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:05 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:05 MHA server closed successfully.
+2020-09-01 23:35:05 MHA server initialized.
+2020-09-01 23:35:05 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:05 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:05 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:05 Parsing command line argument "?save:./log/s00003_l0004_HA-output_config.txt", please wait.
+2020-09-01 23:35:06 Parsing command line argument "?savemons:./log/s00003_l0004_HA-output_mons.txt", please wait.
+2020-09-01 23:35:06 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:06 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:06 MHA server closed successfully.
+2020-09-01 23:35:06 MHA server initialized.
+2020-09-01 23:35:06 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:06 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:06 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:06 Parsing command line argument "?save:./log/s00003_l0005_HA-output_config.txt", please wait.
+2020-09-01 23:35:06 Parsing command line argument "?savemons:./log/s00003_l0005_HA-output_mons.txt", please wait.
+2020-09-01 23:35:06 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:06 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:06 MHA server closed successfully.
+2020-09-01 23:35:06 MHA server initialized.
+2020-09-01 23:35:06 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:06 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:07 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:07 Parsing command line argument "?save:./log/s00003_l0006_HA-output_config.txt", please wait.
+2020-09-01 23:35:07 Parsing command line argument "?savemons:./log/s00003_l0006_HA-output_mons.txt", please wait.
+2020-09-01 23:35:07 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:07 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:07 MHA server closed successfully.
+2020-09-01 23:35:07 MHA server initialized.
+2020-09-01 23:35:07 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:07 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:07 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:07 Parsing command line argument "?save:./log/s00004_l0005_HA-output_config.txt", please wait.
+2020-09-01 23:35:07 Parsing command line argument "?savemons:./log/s00004_l0005_HA-output_mons.txt", please wait.
+2020-09-01 23:35:07 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:07 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:07 MHA server closed successfully.
+2020-09-01 23:35:08 MHA server initialized.
+2020-09-01 23:35:08 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:08 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:08 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:08 Parsing command line argument "?save:./log/s00004_l0006_HA-output_config.txt", please wait.
+2020-09-01 23:35:08 Parsing command line argument "?savemons:./log/s00004_l0006_HA-output_mons.txt", please wait.
+2020-09-01 23:35:08 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:08 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:08 MHA server closed successfully.
+2020-09-01 23:35:08 MHA server initialized.
+2020-09-01 23:35:08 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:08 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:08 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:08 Parsing command line argument "?save:./log/s00004_l0007_HA-output_config.txt", please wait.
+2020-09-01 23:35:08 Parsing command line argument "?savemons:./log/s00004_l0007_HA-output_mons.txt", please wait.
+2020-09-01 23:35:09 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:09 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:09 MHA server closed successfully.
+2020-09-01 23:35:09 MHA server initialized.
+2020-09-01 23:35:09 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:09 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:09 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:09 Parsing command line argument "?save:./log/s00005_l0006_HA-output_config.txt", please wait.
+2020-09-01 23:35:09 Parsing command line argument "?savemons:./log/s00005_l0006_HA-output_mons.txt", please wait.
+2020-09-01 23:35:09 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:09 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:09 MHA server closed successfully.
+2020-09-01 23:35:09 MHA server initialized.
+2020-09-01 23:35:09 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:09 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:10 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:10 Parsing command line argument "?save:./log/s00005_l0007_HA-output_config.txt", please wait.
+2020-09-01 23:35:10 Parsing command line argument "?savemons:./log/s00005_l0007_HA-output_mons.txt", please wait.
+2020-09-01 23:35:10 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:10 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:10 MHA server closed successfully.
+2020-09-01 23:35:10 MHA server initialized.
+2020-09-01 23:35:10 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:35:10 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:35:10 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:35:10 Parsing command line argument "?save:./log/s00005_l0008_HA-output_config.txt", please wait.
+2020-09-01 23:35:10 Parsing command line argument "?savemons:./log/s00005_l0008_HA-output_mons.txt", please wait.
+2020-09-01 23:35:10 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:35:10 Command line arguments parsed, accepting network control input.
+2020-09-01 23:35:10 MHA server closed successfully.
+2020-09-01 23:42:21 MHA server initialized.
+2020-09-01 23:42:21 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-01 23:42:21 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:42:21 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:42:21 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-01 23:42:21 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-01 23:42:21 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:42:21 Command line arguments parsed, accepting network control input.
+2020-09-01 23:42:21 MHA server closed successfully.
+2020-09-01 23:42:21 MHA server initialized.
+2020-09-01 23:42:21 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-01 23:42:21 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:42:22 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:42:22 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-01 23:42:22 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-01 23:42:22 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:42:22 Command line arguments parsed, accepting network control input.
+2020-09-01 23:42:22 MHA server closed successfully.
+2020-09-01 23:42:22 MHA server initialized.
+2020-09-01 23:42:22 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-01 23:42:22 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:42:23 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:42:23 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-01 23:42:23 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-01 23:42:23 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:42:23 Command line arguments parsed, accepting network control input.
+2020-09-01 23:42:23 MHA server closed successfully.
+2020-09-01 23:42:23 MHA server initialized.
+2020-09-01 23:42:23 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-01 23:42:23 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:42:24 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:42:24 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-01 23:42:24 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-01 23:42:24 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:42:24 Command line arguments parsed, accepting network control input.
+2020-09-01 23:42:24 MHA server closed successfully.
+2020-09-01 23:42:24 MHA server initialized.
+2020-09-01 23:42:24 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-01 23:42:24 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:42:25 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:42:25 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-01 23:42:25 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-01 23:42:25 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:42:25 Command line arguments parsed, accepting network control input.
+2020-09-01 23:42:25 MHA server closed successfully.
+2020-09-01 23:42:25 MHA server initialized.
+2020-09-01 23:42:25 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-01 23:42:25 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:42:26 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:42:26 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-01 23:42:26 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-01 23:42:26 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:42:26 Command line arguments parsed, accepting network control input.
+2020-09-01 23:42:26 MHA server closed successfully.
+2020-09-01 23:54:36 MHA server initialized.
+2020-09-01 23:54:36 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:54:36 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:54:36 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:54:36 Parsing command line argument "?save:./log/s00006_l0001_HA-output_config.txt", please wait.
+2020-09-01 23:54:37 Parsing command line argument "?savemons:./log/s00006_l0001_HA-output_mons.txt", please wait.
+2020-09-01 23:54:37 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:54:37 Command line arguments parsed, accepting network control input.
+2020-09-01 23:54:37 MHA server closed successfully.
+2020-09-01 23:54:37 MHA server initialized.
+2020-09-01 23:54:37 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:54:37 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:54:37 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:54:37 Parsing command line argument "?save:./log/s00006_l0002_HA-output_config.txt", please wait.
+2020-09-01 23:54:37 Parsing command line argument "?savemons:./log/s00006_l0002_HA-output_mons.txt", please wait.
+2020-09-01 23:54:37 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:54:37 Command line arguments parsed, accepting network control input.
+2020-09-01 23:54:37 MHA server closed successfully.
+2020-09-01 23:54:37 MHA server initialized.
+2020-09-01 23:54:37 Parsing command line argument "?read:prerelease_combination2_smooth_blankmod.cfg", please wait.
+2020-09-01 23:54:37 Parsing command line argument "cmd=start", please wait.
+2020-09-01 23:54:38 Parsing command line argument "cmd=stop", please wait.
+2020-09-01 23:54:38 Parsing command line argument "?save:./log/s00006_l0003_HA-output_config.txt", please wait.
+2020-09-01 23:54:38 Parsing command line argument "?savemons:./log/s00006_l0003_HA-output_mons.txt", please wait.
+2020-09-01 23:54:38 Parsing command line argument "cmd=quit", please wait.
+2020-09-01 23:54:38 Command line arguments parsed, accepting network control input.
+2020-09-01 23:54:38 MHA server closed successfully.
+2020-09-02 00:14:49 MHA server initialized.
+2020-09-02 00:14:49 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 00:14:49 Parsing command line argument "cmd=start", please wait.
+2020-09-02 00:14:49 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 00:14:49 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-02 00:14:50 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-02 00:14:50 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 00:14:50 Command line arguments parsed, accepting network control input.
+2020-09-02 00:14:50 MHA server closed successfully.
+2020-09-02 00:14:50 MHA server initialized.
+2020-09-02 00:14:50 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 00:14:50 Parsing command line argument "cmd=start", please wait.
+2020-09-02 00:14:50 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 00:14:50 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-02 00:14:51 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-02 00:14:51 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 00:14:51 Command line arguments parsed, accepting network control input.
+2020-09-02 00:14:51 MHA server closed successfully.
+2020-09-02 00:14:51 MHA server initialized.
+2020-09-02 00:14:51 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 00:14:51 Parsing command line argument "cmd=start", please wait.
+2020-09-02 00:14:51 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 00:14:51 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-02 00:14:51 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-02 00:14:52 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 00:14:52 Command line arguments parsed, accepting network control input.
+2020-09-02 00:14:52 MHA server closed successfully.
+2020-09-02 00:14:52 MHA server initialized.
+2020-09-02 00:14:52 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 00:14:52 Parsing command line argument "cmd=start", please wait.
+2020-09-02 00:14:52 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 00:14:52 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-02 00:14:52 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-02 00:14:52 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 00:14:52 Command line arguments parsed, accepting network control input.
+2020-09-02 00:14:52 MHA server closed successfully.
+2020-09-02 00:14:53 MHA server initialized.
+2020-09-02 00:14:53 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 00:14:53 Parsing command line argument "cmd=start", please wait.
+2020-09-02 00:14:53 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 00:14:53 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-02 00:14:53 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-02 00:14:53 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 00:14:53 Command line arguments parsed, accepting network control input.
+2020-09-02 00:14:53 MHA server closed successfully.
+2020-09-02 00:14:54 MHA server initialized.
+2020-09-02 00:14:54 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 00:14:54 Parsing command line argument "cmd=start", please wait.
+2020-09-02 00:14:54 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 00:14:54 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-02 00:14:54 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-02 00:14:54 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 00:14:54 Command line arguments parsed, accepting network control input.
+2020-09-02 00:14:54 MHA server closed successfully.
+2020-09-02 09:33:28 MHA server initialized.
+2020-09-02 09:33:28 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:33:28 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:33:29 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:33:29 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-02 09:33:29 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-02 09:33:29 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:33:29 Command line arguments parsed, accepting network control input.
+2020-09-02 09:33:29 MHA server closed successfully.
+2020-09-02 09:33:29 MHA server initialized.
+2020-09-02 09:33:29 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:33:29 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:33:30 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:33:30 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-02 09:33:30 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-02 09:33:30 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:33:30 Command line arguments parsed, accepting network control input.
+2020-09-02 09:33:30 MHA server closed successfully.
+2020-09-02 09:33:30 MHA server initialized.
+2020-09-02 09:33:30 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:33:30 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:33:31 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:33:31 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-02 09:33:31 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-02 09:33:31 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:33:31 Command line arguments parsed, accepting network control input.
+2020-09-02 09:33:31 MHA server closed successfully.
+2020-09-02 09:33:31 MHA server initialized.
+2020-09-02 09:33:31 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:33:31 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:33:32 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:33:32 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-02 09:33:32 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-02 09:33:32 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:33:32 Command line arguments parsed, accepting network control input.
+2020-09-02 09:33:32 MHA server closed successfully.
+2020-09-02 09:33:32 MHA server initialized.
+2020-09-02 09:33:32 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:33:32 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:33:33 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:33:33 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-02 09:33:33 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-02 09:33:33 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:33:33 Command line arguments parsed, accepting network control input.
+2020-09-02 09:33:33 MHA server closed successfully.
+2020-09-02 09:33:33 MHA server initialized.
+2020-09-02 09:33:33 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:33:33 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:33:34 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:33:34 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-02 09:33:34 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-02 09:33:34 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:33:34 Command line arguments parsed, accepting network control input.
+2020-09-02 09:33:34 MHA server closed successfully.
+2020-09-02 09:33:59 MHA server initialized.
+2020-09-02 09:33:59 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:33:59 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:34:00 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:34:00 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-02 09:34:00 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-02 09:34:00 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:34:00 Command line arguments parsed, accepting network control input.
+2020-09-02 09:34:00 MHA server closed successfully.
+2020-09-02 09:34:00 MHA server initialized.
+2020-09-02 09:34:00 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:34:00 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:34:01 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:34:01 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-02 09:34:01 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-02 09:34:01 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:34:01 Command line arguments parsed, accepting network control input.
+2020-09-02 09:34:01 MHA server closed successfully.
+2020-09-02 09:34:01 MHA server initialized.
+2020-09-02 09:34:01 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:34:01 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:34:02 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:34:02 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-02 09:34:02 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-02 09:34:02 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:34:02 Command line arguments parsed, accepting network control input.
+2020-09-02 09:34:02 MHA server closed successfully.
+2020-09-02 09:34:02 MHA server initialized.
+2020-09-02 09:34:02 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:34:02 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:34:03 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:34:03 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-02 09:34:03 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-02 09:34:03 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:34:03 Command line arguments parsed, accepting network control input.
+2020-09-02 09:34:03 MHA server closed successfully.
+2020-09-02 09:34:03 MHA server initialized.
+2020-09-02 09:34:03 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:34:03 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:34:04 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:34:04 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-02 09:34:04 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-02 09:34:04 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:34:04 Command line arguments parsed, accepting network control input.
+2020-09-02 09:34:04 MHA server closed successfully.
+2020-09-02 09:34:04 MHA server initialized.
+2020-09-02 09:34:04 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:34:04 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:34:05 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:34:05 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-02 09:34:05 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-02 09:34:05 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:34:05 Command line arguments parsed, accepting network control input.
+2020-09-02 09:34:05 MHA server closed successfully.
+2020-09-02 09:34:16 MHA server initialized.
+2020-09-02 09:34:16 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:34:16 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:34:17 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:34:17 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-02 09:34:17 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-02 09:34:17 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:34:17 Command line arguments parsed, accepting network control input.
+2020-09-02 09:34:17 MHA server closed successfully.
+2020-09-02 09:34:17 MHA server initialized.
+2020-09-02 09:34:17 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:34:17 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:34:18 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:34:18 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-02 09:34:18 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-02 09:34:18 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:34:18 Command line arguments parsed, accepting network control input.
+2020-09-02 09:34:18 MHA server closed successfully.
+2020-09-02 09:34:18 MHA server initialized.
+2020-09-02 09:34:18 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:34:18 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:34:19 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:34:19 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-02 09:34:19 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-02 09:34:19 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:34:19 Command line arguments parsed, accepting network control input.
+2020-09-02 09:34:19 MHA server closed successfully.
+2020-09-02 09:34:19 MHA server initialized.
+2020-09-02 09:34:19 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:34:19 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:34:20 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:34:20 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-02 09:34:20 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-02 09:34:20 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:34:20 Command line arguments parsed, accepting network control input.
+2020-09-02 09:34:20 MHA server closed successfully.
+2020-09-02 09:34:20 MHA server initialized.
+2020-09-02 09:34:20 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:34:20 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:34:21 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:34:21 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-02 09:34:21 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-02 09:34:21 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:34:21 Command line arguments parsed, accepting network control input.
+2020-09-02 09:34:21 MHA server closed successfully.
+2020-09-02 09:34:21 MHA server initialized.
+2020-09-02 09:34:21 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:34:21 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:34:22 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:34:22 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-02 09:34:22 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-02 09:34:22 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:34:22 Command line arguments parsed, accepting network control input.
+2020-09-02 09:34:22 MHA server closed successfully.
+2020-09-02 09:36:33 MHA server initialized.
+2020-09-02 09:36:33 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:36:33 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:36:33 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:36:33 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-02 09:36:33 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-02 09:36:34 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:36:34 Command line arguments parsed, accepting network control input.
+2020-09-02 09:36:34 MHA server closed successfully.
+2020-09-02 09:36:34 MHA server initialized.
+2020-09-02 09:36:34 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:36:34 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:36:34 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:36:34 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-02 09:36:34 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-02 09:36:35 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:36:35 Command line arguments parsed, accepting network control input.
+2020-09-02 09:36:35 MHA server closed successfully.
+2020-09-02 09:36:35 MHA server initialized.
+2020-09-02 09:36:35 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:36:35 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:36:35 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:36:35 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-02 09:36:35 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-02 09:36:35 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:36:35 Command line arguments parsed, accepting network control input.
+2020-09-02 09:36:35 MHA server closed successfully.
+2020-09-02 09:36:36 MHA server initialized.
+2020-09-02 09:36:36 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:36:36 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:36:36 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:36:36 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-02 09:36:36 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-02 09:36:36 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:36:36 Command line arguments parsed, accepting network control input.
+2020-09-02 09:36:36 MHA server closed successfully.
+2020-09-02 09:36:37 MHA server initialized.
+2020-09-02 09:36:37 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:36:37 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:36:37 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:36:37 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-02 09:36:37 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-02 09:36:37 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:36:37 Command line arguments parsed, accepting network control input.
+2020-09-02 09:36:37 MHA server closed successfully.
+2020-09-02 09:36:38 MHA server initialized.
+2020-09-02 09:36:38 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:36:38 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:36:38 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:36:38 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-02 09:36:38 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-02 09:36:38 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:36:38 Command line arguments parsed, accepting network control input.
+2020-09-02 09:36:38 MHA server closed successfully.
+2020-09-02 09:38:20 MHA server initialized.
+2020-09-02 09:38:20 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:38:20 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:38:20 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:38:20 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-02 09:38:21 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-02 09:38:21 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:38:21 Command line arguments parsed, accepting network control input.
+2020-09-02 09:38:21 MHA server closed successfully.
+2020-09-02 09:38:21 MHA server initialized.
+2020-09-02 09:38:21 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:38:21 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:38:21 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:38:21 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-02 09:38:22 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-02 09:38:22 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:38:22 Command line arguments parsed, accepting network control input.
+2020-09-02 09:38:22 MHA server closed successfully.
+2020-09-02 09:38:22 MHA server initialized.
+2020-09-02 09:38:22 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:38:22 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:38:22 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:38:22 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-02 09:38:22 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-02 09:38:23 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:38:23 Command line arguments parsed, accepting network control input.
+2020-09-02 09:38:23 MHA server closed successfully.
+2020-09-02 09:38:23 MHA server initialized.
+2020-09-02 09:38:23 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:38:23 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:38:23 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:38:23 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-02 09:38:23 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-02 09:38:23 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:38:23 Command line arguments parsed, accepting network control input.
+2020-09-02 09:38:23 MHA server closed successfully.
+2020-09-02 09:38:24 MHA server initialized.
+2020-09-02 09:38:24 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:38:24 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:38:24 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:38:24 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-02 09:38:24 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-02 09:38:24 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:38:24 Command line arguments parsed, accepting network control input.
+2020-09-02 09:38:24 MHA server closed successfully.
+2020-09-02 09:38:24 MHA server initialized.
+2020-09-02 09:38:24 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:38:24 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:38:25 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:38:25 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-02 09:38:25 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-02 09:38:25 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:38:25 Command line arguments parsed, accepting network control input.
+2020-09-02 09:38:25 MHA server closed successfully.
+2020-09-02 09:39:28 MHA server initialized.
+2020-09-02 09:39:28 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:39:28 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:39:28 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:39:28 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-02 09:39:29 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-02 09:39:29 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:39:29 Command line arguments parsed, accepting network control input.
+2020-09-02 09:39:29 MHA server closed successfully.
+2020-09-02 09:39:29 MHA server initialized.
+2020-09-02 09:39:29 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:39:29 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:39:29 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:39:29 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-02 09:39:29 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-02 09:39:30 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:39:30 Command line arguments parsed, accepting network control input.
+2020-09-02 09:39:30 MHA server closed successfully.
+2020-09-02 09:39:30 MHA server initialized.
+2020-09-02 09:39:30 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:39:30 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:39:30 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:39:30 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-02 09:39:30 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-02 09:39:30 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:39:30 Command line arguments parsed, accepting network control input.
+2020-09-02 09:39:30 MHA server closed successfully.
+2020-09-02 09:39:31 MHA server initialized.
+2020-09-02 09:39:31 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:39:31 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:39:31 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:39:31 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-02 09:39:31 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-02 09:39:31 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:39:31 Command line arguments parsed, accepting network control input.
+2020-09-02 09:39:31 MHA server closed successfully.
+2020-09-02 09:39:31 MHA server initialized.
+2020-09-02 09:39:31 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:39:31 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:39:32 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:39:32 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-02 09:39:32 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-02 09:39:32 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:39:32 Command line arguments parsed, accepting network control input.
+2020-09-02 09:39:32 MHA server closed successfully.
+2020-09-02 09:39:32 MHA server initialized.
+2020-09-02 09:39:32 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:39:32 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:39:33 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:39:33 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-02 09:39:33 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-02 09:39:33 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:39:33 Command line arguments parsed, accepting network control input.
+2020-09-02 09:39:33 MHA server closed successfully.
+2020-09-02 09:40:15 MHA server initialized.
+2020-09-02 09:40:15 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:40:15 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:40:15 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:40:15 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-02 09:40:15 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-02 09:40:15 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:40:15 Command line arguments parsed, accepting network control input.
+2020-09-02 09:40:15 MHA server closed successfully.
+2020-09-02 09:40:16 MHA server initialized.
+2020-09-02 09:40:16 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:40:16 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:40:16 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:40:16 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-02 09:40:16 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-02 09:40:16 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:40:16 Command line arguments parsed, accepting network control input.
+2020-09-02 09:40:16 MHA server closed successfully.
+2020-09-02 09:40:16 MHA server initialized.
+2020-09-02 09:40:16 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:40:16 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:40:17 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:40:17 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-02 09:40:17 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-02 09:40:17 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:40:17 Command line arguments parsed, accepting network control input.
+2020-09-02 09:40:17 MHA server closed successfully.
+2020-09-02 09:40:17 MHA server initialized.
+2020-09-02 09:40:17 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:40:17 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:40:18 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:40:18 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-02 09:40:18 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-02 09:40:18 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:40:18 Command line arguments parsed, accepting network control input.
+2020-09-02 09:40:18 MHA server closed successfully.
+2020-09-02 09:40:18 MHA server initialized.
+2020-09-02 09:40:18 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:40:18 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:40:19 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:40:19 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-02 09:40:19 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-02 09:40:19 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:40:19 Command line arguments parsed, accepting network control input.
+2020-09-02 09:40:19 MHA server closed successfully.
+2020-09-02 09:40:19 MHA server initialized.
+2020-09-02 09:40:19 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:40:19 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:40:20 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:40:20 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-02 09:40:20 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-02 09:40:20 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:40:20 Command line arguments parsed, accepting network control input.
+2020-09-02 09:40:20 MHA server closed successfully.
+2020-09-02 09:40:55 MHA server initialized.
+2020-09-02 09:40:55 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:40:55 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:40:55 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:40:55 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-02 09:40:55 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-02 09:40:56 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:40:56 Command line arguments parsed, accepting network control input.
+2020-09-02 09:40:56 MHA server closed successfully.
+2020-09-02 09:40:56 MHA server initialized.
+2020-09-02 09:40:56 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:40:56 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:40:56 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:40:56 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-02 09:40:56 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-02 09:40:56 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:40:56 Command line arguments parsed, accepting network control input.
+2020-09-02 09:40:56 MHA server closed successfully.
+2020-09-02 09:40:57 MHA server initialized.
+2020-09-02 09:40:57 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:40:57 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:40:57 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:40:57 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-02 09:40:57 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-02 09:40:57 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:40:57 Command line arguments parsed, accepting network control input.
+2020-09-02 09:40:57 MHA server closed successfully.
+2020-09-02 09:40:57 MHA server initialized.
+2020-09-02 09:40:57 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:40:57 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:40:58 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:40:58 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-02 09:40:58 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-02 09:40:58 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:40:58 Command line arguments parsed, accepting network control input.
+2020-09-02 09:40:58 MHA server closed successfully.
+2020-09-02 09:40:58 MHA server initialized.
+2020-09-02 09:40:58 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:40:58 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:40:59 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:40:59 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-02 09:40:59 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-02 09:40:59 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:40:59 Command line arguments parsed, accepting network control input.
+2020-09-02 09:40:59 MHA server closed successfully.
+2020-09-02 09:40:59 MHA server initialized.
+2020-09-02 09:40:59 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:40:59 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:41:00 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:41:00 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-02 09:41:00 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-02 09:41:00 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:41:00 Command line arguments parsed, accepting network control input.
+2020-09-02 09:41:00 MHA server closed successfully.
+2020-09-02 09:42:28 MHA server initialized.
+2020-09-02 09:42:28 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:42:28 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:42:28 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:42:28 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-02 09:42:28 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-02 09:42:29 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:42:29 Command line arguments parsed, accepting network control input.
+2020-09-02 09:42:29 MHA server closed successfully.
+2020-09-02 09:42:29 MHA server initialized.
+2020-09-02 09:42:29 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:42:29 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:42:29 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:42:29 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-02 09:42:29 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-02 09:42:30 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:42:30 Command line arguments parsed, accepting network control input.
+2020-09-02 09:42:30 MHA server closed successfully.
+2020-09-02 09:42:30 MHA server initialized.
+2020-09-02 09:42:30 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:42:30 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:42:30 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:42:30 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-02 09:42:30 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-02 09:42:30 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:42:30 Command line arguments parsed, accepting network control input.
+2020-09-02 09:42:30 MHA server closed successfully.
+2020-09-02 09:42:31 MHA server initialized.
+2020-09-02 09:42:31 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:42:31 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:42:31 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:42:31 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-02 09:42:31 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-02 09:42:31 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:42:31 Command line arguments parsed, accepting network control input.
+2020-09-02 09:42:31 MHA server closed successfully.
+2020-09-02 09:42:31 MHA server initialized.
+2020-09-02 09:42:31 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:42:31 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:42:32 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:42:32 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-02 09:42:32 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-02 09:42:32 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:42:32 Command line arguments parsed, accepting network control input.
+2020-09-02 09:42:32 MHA server closed successfully.
+2020-09-02 09:42:32 MHA server initialized.
+2020-09-02 09:42:32 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:42:32 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:42:33 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:42:33 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-02 09:42:33 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-02 09:42:33 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:42:33 Command line arguments parsed, accepting network control input.
+2020-09-02 09:42:33 MHA server closed successfully.
+2020-09-02 09:43:25 MHA server initialized.
+2020-09-02 09:43:25 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:43:25 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:43:26 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:43:26 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-02 09:43:26 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-02 09:43:26 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:43:26 Command line arguments parsed, accepting network control input.
+2020-09-02 09:43:26 MHA server closed successfully.
+2020-09-02 09:43:26 MHA server initialized.
+2020-09-02 09:43:26 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:43:26 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:43:27 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:43:27 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-02 09:43:27 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-02 09:43:27 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:43:27 Command line arguments parsed, accepting network control input.
+2020-09-02 09:43:27 MHA server closed successfully.
+2020-09-02 09:43:27 MHA server initialized.
+2020-09-02 09:43:27 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:43:27 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:43:28 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:43:28 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-02 09:43:28 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-02 09:43:28 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:43:28 Command line arguments parsed, accepting network control input.
+2020-09-02 09:43:28 MHA server closed successfully.
+2020-09-02 09:43:28 MHA server initialized.
+2020-09-02 09:43:28 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:43:28 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:43:29 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:43:29 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-02 09:43:29 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-02 09:43:29 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:43:29 Command line arguments parsed, accepting network control input.
+2020-09-02 09:43:29 MHA server closed successfully.
+2020-09-02 09:43:29 MHA server initialized.
+2020-09-02 09:43:29 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:43:29 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:43:30 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:43:30 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-02 09:43:30 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-02 09:43:30 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:43:30 Command line arguments parsed, accepting network control input.
+2020-09-02 09:43:30 MHA server closed successfully.
+2020-09-02 09:43:30 MHA server initialized.
+2020-09-02 09:43:30 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:43:30 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:43:31 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:43:31 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-02 09:43:31 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-02 09:43:31 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:43:31 Command line arguments parsed, accepting network control input.
+2020-09-02 09:43:31 MHA server closed successfully.
+2020-09-02 09:44:58 MHA server initialized.
+2020-09-02 09:44:58 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:44:58 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:44:58 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:44:58 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-02 09:44:58 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-02 09:44:58 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:44:58 Command line arguments parsed, accepting network control input.
+2020-09-02 09:44:58 MHA server closed successfully.
+2020-09-02 09:44:59 MHA server initialized.
+2020-09-02 09:44:59 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:44:59 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:44:59 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:44:59 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-02 09:44:59 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-02 09:44:59 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:44:59 Command line arguments parsed, accepting network control input.
+2020-09-02 09:44:59 MHA server closed successfully.
+2020-09-02 09:45:00 MHA server initialized.
+2020-09-02 09:45:00 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:45:00 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:45:00 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:45:00 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-02 09:45:00 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-02 09:45:00 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:45:00 Command line arguments parsed, accepting network control input.
+2020-09-02 09:45:00 MHA server closed successfully.
+2020-09-02 09:45:01 MHA server initialized.
+2020-09-02 09:45:01 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:45:01 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:45:01 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:45:01 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-02 09:45:01 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-02 09:45:01 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:45:01 Command line arguments parsed, accepting network control input.
+2020-09-02 09:45:01 MHA server closed successfully.
+2020-09-02 09:45:01 MHA server initialized.
+2020-09-02 09:45:01 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:45:01 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:45:02 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:45:02 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-02 09:45:02 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-02 09:45:02 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:45:02 Command line arguments parsed, accepting network control input.
+2020-09-02 09:45:02 MHA server closed successfully.
+2020-09-02 09:45:02 MHA server initialized.
+2020-09-02 09:45:02 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:45:02 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:45:03 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:45:03 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-02 09:45:03 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-02 09:45:03 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:45:03 Command line arguments parsed, accepting network control input.
+2020-09-02 09:45:03 MHA server closed successfully.
+2020-09-02 09:46:02 MHA server initialized.
+2020-09-02 09:46:02 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:46:02 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:46:03 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:46:03 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-02 09:46:03 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-02 09:46:03 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:46:03 Command line arguments parsed, accepting network control input.
+2020-09-02 09:46:03 MHA server closed successfully.
+2020-09-02 09:46:03 MHA server initialized.
+2020-09-02 09:46:03 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:46:03 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:46:04 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:46:04 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-02 09:46:04 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-02 09:46:04 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:46:04 Command line arguments parsed, accepting network control input.
+2020-09-02 09:46:04 MHA server closed successfully.
+2020-09-02 09:46:04 MHA server initialized.
+2020-09-02 09:46:04 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:46:04 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:46:05 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:46:05 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-02 09:46:05 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-02 09:46:05 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:46:05 Command line arguments parsed, accepting network control input.
+2020-09-02 09:46:05 MHA server closed successfully.
+2020-09-02 09:46:05 MHA server initialized.
+2020-09-02 09:46:05 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:46:05 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:46:06 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:46:06 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-02 09:46:06 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-02 09:46:06 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:46:06 Command line arguments parsed, accepting network control input.
+2020-09-02 09:46:06 MHA server closed successfully.
+2020-09-02 09:46:06 MHA server initialized.
+2020-09-02 09:46:06 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:46:06 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:46:07 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:46:07 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-02 09:46:07 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-02 09:46:07 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:46:07 Command line arguments parsed, accepting network control input.
+2020-09-02 09:46:07 MHA server closed successfully.
+2020-09-02 09:46:07 MHA server initialized.
+2020-09-02 09:46:07 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 09:46:07 Parsing command line argument "cmd=start", please wait.
+2020-09-02 09:46:08 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 09:46:08 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-02 09:46:08 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-02 09:46:08 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 09:46:08 Command line arguments parsed, accepting network control input.
+2020-09-02 09:46:08 MHA server closed successfully.
+2020-09-02 10:16:54 MHA server initialized.
+2020-09-02 10:16:54 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 10:16:54 Parsing command line argument "cmd=start", please wait.
+2020-09-02 10:16:55 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 10:16:55 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-02 10:16:55 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-02 10:16:55 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 10:16:55 Command line arguments parsed, accepting network control input.
+2020-09-02 10:16:55 MHA server closed successfully.
+2020-09-02 10:16:55 MHA server initialized.
+2020-09-02 10:16:55 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 10:16:55 Parsing command line argument "cmd=start", please wait.
+2020-09-02 10:16:56 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 10:16:56 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-02 10:16:56 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-02 10:16:56 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 10:16:56 Command line arguments parsed, accepting network control input.
+2020-09-02 10:16:56 MHA server closed successfully.
+2020-09-02 10:16:56 MHA server initialized.
+2020-09-02 10:16:56 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 10:16:56 Parsing command line argument "cmd=start", please wait.
+2020-09-02 10:16:57 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 10:16:57 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-02 10:16:57 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-02 10:16:57 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 10:16:57 Command line arguments parsed, accepting network control input.
+2020-09-02 10:16:57 MHA server closed successfully.
+2020-09-02 10:16:57 MHA server initialized.
+2020-09-02 10:16:57 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 10:16:57 Parsing command line argument "cmd=start", please wait.
+2020-09-02 10:16:57 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 10:16:57 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-02 10:16:58 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-02 10:16:58 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 10:16:58 Command line arguments parsed, accepting network control input.
+2020-09-02 10:16:58 MHA server closed successfully.
+2020-09-02 10:16:58 MHA server initialized.
+2020-09-02 10:16:58 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 10:16:58 Parsing command line argument "cmd=start", please wait.
+2020-09-02 10:16:58 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 10:16:58 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-02 10:16:59 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-02 10:16:59 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 10:16:59 Command line arguments parsed, accepting network control input.
+2020-09-02 10:16:59 MHA server closed successfully.
+2020-09-02 10:16:59 MHA server initialized.
+2020-09-02 10:16:59 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 10:16:59 Parsing command line argument "cmd=start", please wait.
+2020-09-02 10:16:59 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 10:16:59 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-02 10:17:00 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-02 10:17:00 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 10:17:00 Command line arguments parsed, accepting network control input.
+2020-09-02 10:17:00 MHA server closed successfully.
+2020-09-02 10:17:23 MHA server initialized.
+2020-09-02 10:17:23 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 10:17:23 Parsing command line argument "cmd=start", please wait.
+2020-09-02 10:17:23 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 10:17:23 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-02 10:17:23 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-02 10:17:23 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 10:17:23 Command line arguments parsed, accepting network control input.
+2020-09-02 10:17:23 MHA server closed successfully.
+2020-09-02 10:17:24 MHA server initialized.
+2020-09-02 10:17:24 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 10:17:24 Parsing command line argument "cmd=start", please wait.
+2020-09-02 10:17:24 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 10:17:24 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-02 10:17:24 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-02 10:17:24 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 10:17:24 Command line arguments parsed, accepting network control input.
+2020-09-02 10:17:24 MHA server closed successfully.
+2020-09-02 10:17:24 MHA server initialized.
+2020-09-02 10:17:24 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 10:17:24 Parsing command line argument "cmd=start", please wait.
+2020-09-02 10:17:25 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 10:17:25 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-02 10:17:25 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-02 10:17:25 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 10:17:25 Command line arguments parsed, accepting network control input.
+2020-09-02 10:17:25 MHA server closed successfully.
+2020-09-02 10:17:25 MHA server initialized.
+2020-09-02 10:17:25 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 10:17:25 Parsing command line argument "cmd=start", please wait.
+2020-09-02 10:17:26 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 10:17:26 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-02 10:17:26 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-02 10:17:26 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 10:17:26 Command line arguments parsed, accepting network control input.
+2020-09-02 10:17:26 MHA server closed successfully.
+2020-09-02 10:17:26 MHA server initialized.
+2020-09-02 10:17:26 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 10:17:26 Parsing command line argument "cmd=start", please wait.
+2020-09-02 10:17:27 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 10:17:27 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-02 10:17:27 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-02 10:17:27 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 10:17:27 Command line arguments parsed, accepting network control input.
+2020-09-02 10:17:27 MHA server closed successfully.
+2020-09-02 10:17:27 MHA server initialized.
+2020-09-02 10:17:27 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-02 10:17:27 Parsing command line argument "cmd=start", please wait.
+2020-09-02 10:17:28 Parsing command line argument "cmd=stop", please wait.
+2020-09-02 10:17:28 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-02 10:17:28 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-02 10:17:28 Parsing command line argument "cmd=quit", please wait.
+2020-09-02 10:17:28 Command line arguments parsed, accepting network control input.
+2020-09-02 10:17:28 MHA server closed successfully.
+2020-09-16 23:22:55 MHA server initialized.
+2020-09-16 23:22:55 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-16 23:22:55 Parsing command line argument "cmd=start", please wait.
+2020-09-16 23:22:56 Parsing command line argument "cmd=stop", please wait.
+2020-09-16 23:22:56 Parsing command line argument "?save:./log/s00003_l0002_HA_config.txt", please wait.
+2020-09-16 23:22:56 Parsing command line argument "?savemons:./log/s00003_l0002_HA_mons.txt", please wait.
+2020-09-16 23:22:56 Parsing command line argument "cmd=quit", please wait.
+2020-09-16 23:22:56 Command line arguments parsed, accepting network control input.
+2020-09-16 23:22:56 MHA server closed successfully.
+2020-09-16 23:22:56 MHA server initialized.
+2020-09-16 23:22:56 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-16 23:22:56 Parsing command line argument "cmd=start", please wait.
+2020-09-16 23:22:57 Parsing command line argument "cmd=stop", please wait.
+2020-09-16 23:22:57 Parsing command line argument "?save:./log/s00003_l0004_HA_config.txt", please wait.
+2020-09-16 23:22:57 Parsing command line argument "?savemons:./log/s00003_l0004_HA_mons.txt", please wait.
+2020-09-16 23:22:57 Parsing command line argument "cmd=quit", please wait.
+2020-09-16 23:22:57 Command line arguments parsed, accepting network control input.
+2020-09-16 23:22:57 MHA server closed successfully.
+2020-09-16 23:22:57 MHA server initialized.
+2020-09-16 23:22:57 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-16 23:22:57 Parsing command line argument "cmd=start", please wait.
+2020-09-16 23:22:58 Parsing command line argument "cmd=stop", please wait.
+2020-09-16 23:22:58 Parsing command line argument "?save:./log/s00003_l0005_HA_config.txt", please wait.
+2020-09-16 23:22:58 Parsing command line argument "?savemons:./log/s00003_l0005_HA_mons.txt", please wait.
+2020-09-16 23:22:58 Parsing command line argument "cmd=quit", please wait.
+2020-09-16 23:22:58 Command line arguments parsed, accepting network control input.
+2020-09-16 23:22:58 MHA server closed successfully.
+2020-09-16 23:22:58 MHA server initialized.
+2020-09-16 23:22:58 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-16 23:22:58 Parsing command line argument "cmd=start", please wait.
+2020-09-16 23:22:58 Parsing command line argument "cmd=stop", please wait.
+2020-09-16 23:22:58 Parsing command line argument "?save:./log/s00003_l0006_HA_config.txt", please wait.
+2020-09-16 23:22:59 Parsing command line argument "?savemons:./log/s00003_l0006_HA_mons.txt", please wait.
+2020-09-16 23:22:59 Parsing command line argument "cmd=quit", please wait.
+2020-09-16 23:22:59 Command line arguments parsed, accepting network control input.
+2020-09-16 23:22:59 MHA server closed successfully.
+2020-09-16 23:22:59 MHA server initialized.
+2020-09-16 23:22:59 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-16 23:22:59 Parsing command line argument "cmd=start", please wait.
+2020-09-16 23:22:59 Parsing command line argument "cmd=stop", please wait.
+2020-09-16 23:22:59 Parsing command line argument "?save:./log/s00003_l0007_HA_config.txt", please wait.
+2020-09-16 23:22:59 Parsing command line argument "?savemons:./log/s00003_l0007_HA_mons.txt", please wait.
+2020-09-16 23:22:59 Parsing command line argument "cmd=quit", please wait.
+2020-09-16 23:23:00 Command line arguments parsed, accepting network control input.
+2020-09-16 23:23:00 MHA server closed successfully.
+2020-09-16 23:23:00 MHA server initialized.
+2020-09-16 23:23:00 Parsing command line argument "?read:prerelease_combination_blankmod.cfg", please wait.
+2020-09-16 23:23:00 Parsing command line argument "cmd=start", please wait.
+2020-09-16 23:23:00 Parsing command line argument "cmd=stop", please wait.
+2020-09-16 23:23:00 Parsing command line argument "?save:./log/s00003_l0008_HA_config.txt", please wait.
+2020-09-16 23:23:00 Parsing command line argument "?savemons:./log/s00003_l0008_HA_mons.txt", please wait.
+2020-09-16 23:23:00 Parsing command line argument "cmd=quit", please wait.
+2020-09-16 23:23:00 Command line arguments parsed, accepting network control input.
+2020-09-16 23:23:00 MHA server closed successfully.

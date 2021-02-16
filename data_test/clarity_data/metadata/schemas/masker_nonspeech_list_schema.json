@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": 
+      {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": "string",
+            "pattern": "^CIN_[a-z]*_[0-9]{3}$"
+          },
+          "class": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "file": {
+            "type": "string"
+          },
+          "dataset": {
+            "type": "string",
+            "enum": ["train", "dev", "eval"]
+          },
+          "type": {
+            "type": "string",
+            "const": "noise"
+          },
+          "nsamples": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "duration": {
+            "type": "number"
+          },
+          "fs": {
+            "type": "integer",
+            "const": 44100
+          }
+        },
+        "required": [
+          "ID",
+          "class",
+          "source",
+          "file",
+          "dataset",
+          "type",
+          "nsamples",
+          "duration",
+          "fs"
+        ]
+      }
+  }
+  

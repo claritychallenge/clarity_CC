@@ -1,0 +1,13 @@
+[
+  {
+    "ID": "CIN_fan_003",
+    "class": "ElectricFan",
+    "source": "Toronto",
+    "file": "https://tspace.library.utoronto.ca/bitstream/1807/66304/9/09.%20VENTILATION%20AB.wav",
+    "dataset": "dev",
+    "type": "noise",
+    "nsamples": 13230013,
+    "duration": 300.0002947845805,
+    "fs": 44100
+  }
+]

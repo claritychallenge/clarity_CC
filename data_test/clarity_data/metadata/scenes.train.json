@@ -1,0 +1,54 @@
+[
+  {
+    "room": {
+      "name": "R00001",
+      "dimensions": "5.9x3.4186x2.9"
+    },
+    "hrirfilename": "VP_N5-ED",
+    "target": {
+      "Positions": [
+        -0.5,
+        3.4,
+        1.2
+      ],
+      "ViewVectors": [
+        0.291,
+        -0.957,
+        0
+      ],
+      "name": "T005_JYD_04274",
+      "nsamples": 109809
+    },
+    "listener": {
+      "Positions": [
+        0.2,
+        1.1,
+        1.2
+      ],
+      "ViewVectors": [
+        -0.414,
+        0.91,
+        0
+      ]
+    },
+    "interferer": {
+      "Positions": [
+        0.4,
+        3.2,
+        1.2
+      ],
+      "name": "CIN_dishwasher_012",
+      "nsamples": 1190700,
+      "duration": 27,
+      "type": "noise",
+      "offset": 182115
+    },
+    "azimuth_target_listener": -7.54,
+    "azimuth_interferer_listener": -29.9,
+    "scene": "S00001",
+    "dataset": "train",
+    "pre_samples": 88200,
+    "post_samples": 44100,
+    "SNR": 0.976
+  }
+]

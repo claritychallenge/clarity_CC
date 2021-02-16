@@ -1,0 +1,3 @@
+scipy
+numpy
+file:../../lib/clarity_core

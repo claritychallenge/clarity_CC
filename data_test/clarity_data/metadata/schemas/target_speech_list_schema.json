@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "prompt": {
+          "type": "string"
+        },
+        "prompt_id": {
+          "type": "string",
+          "pattern": "^[0-9A-Z]{3}_[0-9]{5}$"
+        },
+        "speaker": {
+          "type": "string",
+          "pattern": "^T[0-9]{3}$"
+        },
+        "wavfile": {
+          "type": "string",
+          "pattern": "^T[0-9]{3}_[0-9A-Z]{3}_[0-9]{5}(x[2-5])?$"
+        },
+        "index": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 255
+        },
+        "dot": {
+          "type": "string"
+        },
+        "sex": {
+          "type": "string",
+          "enum": ["M", "F"]
+        },
+        "dataset": {
+          "type": "string"
+        },
+        "nsamples": {
+          "type": "integer"
+        },
+        "fs": {
+          "type": "integer",
+          "const": 44100
+        },
+        "duration": {
+          "type": "number",
+          "minimum": 1.0,
+          "maximum": 8.0
+        }
+      },
+      "required": [
+        "prompt",
+        "prompt_id",
+        "speaker",
+        "wavfile",
+        "index",
+        "dot",
+        "sex",
+        "dataset",
+        "nsamples",
+        "fs",
+        "duration"
+      ]
+    },
+    "additionalItems": false
+  }
