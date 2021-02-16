@@ -17,7 +17,7 @@ Then see [INSTALL.md](INSTALL.md) for full installation and usage instructions.
 
 ## Licensing terms
 
-All Clarity code is made available under the terms of the Creative Commons Attribution-ShareAlike 4.0 International licence with the following exceptions.
+All Clarity code is made available under the terms of the Creative Commons Attribution-ShareAlike 4.0 International licence with the exceptions listed below.
 
 If you use this code in publications, please cite it as follows:
 
