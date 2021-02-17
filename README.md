@@ -2,7 +2,7 @@
 
 Clarity challenge baseline code for the first enhancement challenge (CEC1).
 
-For more information about the Clarity Challenge please visit http://claritychallenge.org/the-team
+For more information about the Clarity Challenge please visit http://claritychallenge.org/
 
 ## Installation instructions
 
