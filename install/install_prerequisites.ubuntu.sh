@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 #
 # The Clarity pipeline has a number of prerequisites
-# The following should install these on an Ubuntu lixus system
+# The following should install these on an Ubuntu linux system
 #
 
 sudo -n true  >& /dev/null
-test $? -eq 0 || { echo "You require sudo priveledge to run this script"; exit 1
+test $? -eq 0 || { echo "You require sudo priviledge to run this script"; exit 1
 ; }
 
 echo Installing pre-requisites
