@@ -14,10 +14,10 @@ You will need,
 
 Visit the `install/` directory. 
 
-- If you are using an Ubuntu linux system you should be able to install all necessary pre-requisites by running `install_prerequisites.unbuntu.sh`
-- If you are using a Mac things are a little more experimental. Please see `install_preprequisities.macos.sh` and read the comments before running.
+- If you are using an Ubuntu linux system, you should be able to install all necessary pre-requisites by running `install_prerequisites.unbuntu.sh`
+- If you are using a Mac, things are a little more experimental. Please see `install_prerequisities.macos.sh` and read the comments before running.
 
-Once these pre-requisites are installed the remaining instructions should be common for mac and linux.
+Once these pre-requisites are installed the remaining instructions should be common for Mac and linux.
 ## 1. Installation
 
 Visit the `install/` directory and run the `install.sh` script.
@@ -27,7 +27,7 @@ cd install
 ./install.sh
 ```
 
-This script will perform three actions,
+This script will perform three actions:
 
 - Download third-party Head-Related Impulse Response (HRIR) data that is used in the pipeline.
 - Set up a Python virtual environment and install required Python packages.
