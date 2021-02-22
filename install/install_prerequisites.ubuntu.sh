@@ -5,7 +5,7 @@
 #
 
 sudo -n true  >& /dev/null
-test $? -eq 0 || { echo "You require sudo priviledge to run this script"; exit 1
+test $? -eq 0 || { echo "You require sudo privilege to run this script"; exit 1
 ; }
 
 echo Installing pre-requisites
