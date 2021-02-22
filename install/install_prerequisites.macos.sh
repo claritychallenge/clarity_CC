@@ -12,7 +12,7 @@ brew install wget
 #
 # brew install gnu-sed
 #
-## and Add the following to you path
+## and Add the following to your path
 #
 # PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
