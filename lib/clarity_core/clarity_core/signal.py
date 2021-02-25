@@ -220,14 +220,33 @@ def find_delay(x, y):
     return shift
 
 
+# def find_delay_impulse(ddf, initial_value=22050):
+#     """Find delay in signal ddf given initial location of unit impulse, initial_value."""
+#     pk = find_peaks(ddf[:, 0])  # take left signal as reference
+#     delay = 0
+#     if len(pk[0]) > 0:
+#         # m = np.max(ddf[pk[0], 0])
+#         pkmax = np.argmax(ddf[:, 0])
+#         delay = pkmax - initial_value
+#     else:
+#         logging.error("Error in selecting peaks.")
+#     return delay
+
+
 def find_delay_impulse(ddf, initial_value=22050):
-    """Find delay in signal ddf given initial location of unit impulse, initial_value."""
-    pk = find_peaks(ddf[:, 0])  # take left signal as reference
-    delay = 0
-    if len(pk[0]) > 0:
-        # m = np.max(ddf[pk[0], 0])
-        pkmax = np.argmax(ddf[:, 0])
-        delay = pkmax - initial_value
+    """Find binaural delay in signal ddf given initial location of unit impulse, initial_value."""
+    pk0 = find_peaks(ddf[:, 0])
+    pk1 = find_peaks(ddf[:, 1])
+    delay = np.zeros((2, 1))
+    if len(pk0[0]) > 0:
+        # m = np.max(ddf[pk0[0], 0])
+        pkmax0 = np.argmax(ddf[:, 0])
+        delay[0] = int(pkmax0 - initial_value)
+    else:
+        logging.error("Error in selecting peaks.")
+    if len(pk1[0]) > 0:
+        pkmax1 = np.argmax(ddf[:, 1])
+        delay[1] = int(pkmax1 - initial_value)
     else:
         logging.error("Error in selecting peaks.")
     return delay

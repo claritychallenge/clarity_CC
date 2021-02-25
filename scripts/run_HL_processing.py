@@ -8,7 +8,7 @@ from scipy.signal import unit_impulse
 
 from clarity_core.config import CONFIG
 
-from clarity_core.signal import read_signal, write_signal
+from clarity_core.signal import read_signal, write_signal, pad
 
 sys.path.append("../projects/MSBG")
 import MSBG
@@ -22,6 +22,15 @@ def listen(signal, ears):
         )
         for i, ear in enumerate(ears)
     ]
+
+    # Fix length difference if no smearing on one of two ears
+    if len(outputs[0][0]) != len(outputs[1][0]):
+        diff = len(outputs[0][0]) - len(outputs[1][0])
+        if diff > 0:
+            outputs[1][0] = np.flipud(pad(np.flipud(outputs[1][0]), len(outputs[0][0])))
+        else:
+            outputs[0][0] = np.flipud(pad(np.flipud(outputs[0][0]), len(outputs[1][0])))
+
     return np.squeeze(outputs).T
 
 
@@ -41,6 +50,9 @@ def run_HL_processing(scene, listener, input_path, output_path, fs):
     logging.debug("Listener data")
     logging.debug(listener["name"])
 
+    # Get audiogram centre frequencies
+    cfs = np.array(listener["audiogram_cfs"])
+
     # Read HA output and mixed signals
     signal = read_signal(
         f"{input_path}/{scene['scene']}_{listener['name']}_HA-output.wav"
@@ -54,7 +66,6 @@ def run_HL_processing(scene, listener, input_path, output_path, fs):
     ddf_signal[:, 1] = unit_impulse(len(signal), int(fs / 2))
 
     # Get flat-0dB ear audiograms
-    cfs = np.array(listener["audiogram_cfs"])
     flat0dB_audiogram = MSBG.Audiogram(cfs=cfs, levels=np.zeros((np.shape(cfs))))
     flat0dB_ear = MSBG.Ear(audiogram=flat0dB_audiogram, src_pos="ff")
 
@@ -69,7 +80,7 @@ def run_HL_processing(scene, listener, input_path, output_path, fs):
     audiograms = [left_audiogram, right_audiogram]
     ears = [MSBG.Ear(audiogram=audiogram, src_pos="ff") for audiogram in audiograms]
 
-    # Process the HA output signal, the raw mixed signal, and the ddF signal
+    # Process the HA output signal, the raw mixed signal, and the ddf signal
     outputs = listen(signal, ears)
     mixture_outputs = listen(mixture_signal, ears)
     ddf_outputs = listen(ddf_signal, ears)

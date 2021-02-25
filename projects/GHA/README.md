@@ -11,8 +11,13 @@ compression. British Journal of Audiology, 33(3), 157-170.
 
 The MATLAB GUI and associated prescription and "noisegate" calculation files are 
 replaced by a Python wrapper, which pulls in a template configuration file and
-replaces the necessary files before sending to openMHA. openMHA should be installed
-separately. See tools/get_openmha.sh.
+replaces the necessary fields before sending to openMHA. openMHA should be installed
+separately.
+
+This configuration includes multiband dynamic compression and non-adaptive differential
+processing. The intention was to produce a basic hearing aid without various aspects of 
+signal processing that are common in high-end hearing aids, but tend to be implemented
+in proprietary forms so cannot be replicated exactly.
 
 ## Installation
 
@@ -20,12 +25,12 @@ separately. See tools/get_openmha.sh.
 # Download
 git clone --recurse-submodules https://github.com/claritychallenge/GHA
 cd GHA
-git checkout development
+
 # Set up python virtual environment
 python -m venv env
 source env/bin/activate
 pip install --upgrade pip
-pip install -r requirements-dev.txt
+pip install -r requirements.txt
 ```
 
 ## To use

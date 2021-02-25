@@ -52,7 +52,12 @@ def calculate_SI(
         f"{processed_input_path}/{scene['scene']}_{listener['name']}_HLddf-output.wav",
     )
 
+    # Currently correcting for maximum delay across two channels
     delay = find_delay_impulse(ddf, initial_value=int(CONFIG.fs / 2))
+    if delay[0] != delay[1]:
+        logging.debug(f"Difference in delay of {delay[0] - delay[1]}.")
+    maxdelay = int(np.max(delay))
+
     # Allow for value lower than 1000 samples in case of unimpaired hearing
     if delay > 2000:
         logging.error(f"Error in delay calculation for signal time-alignment.")
@@ -62,7 +67,7 @@ def calculate_SI(
     logging.info(
         f"Correcting for delay + difference in signal lengths where delay = {delay} and length diff is {len(proc) - len(clean)} samples."
     )
-    delay = delay + len(proc) - len(clean)
+    delay = maxdelay + len(proc) - len(clean)
 
     # Pad signals to ensure equal length
     cleanpad = np.zeros((len(clean) + delay, 2))

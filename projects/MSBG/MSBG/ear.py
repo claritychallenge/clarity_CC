@@ -183,11 +183,13 @@ class Ear(object):
                 "Warning: only a sampling frequency of 44.1kHz can be used by MSBG."
             )
 
-        logging.info(f"Processing {len(chans)} channels")
+        logging.info(f"Processing {len(chans)} samples")
 
         # Get single channel array and convert to list
         chans = Ear.array_to_list(chans)
 
+        # Need to know file RMS, and then call that a certain level in SPL:
+        # needs some form of pre-measuring.
         levelreFS = 10 * np.log10(np.mean(np.array(chans) ** 2))
 
         equiv_0dB_SPL = CONFIG.equiv0dBSPL + CONFIG.ahr
@@ -197,13 +199,12 @@ class Ear(object):
         TARGET_SPL = leveldBSPL
         REF_RMS_DB = CALIB_DB_SPL - equiv_0dB_SPL
 
-        # Need to know file RMS, and then call that a certain level in SPL:
-        # needs some form of pre-measuring. 3rd arg is dB_rel_rms (how far below)
+        # Measure RMS where 3rd arg is dB_rel_rms (how far below)
         calculated_rms, idx, rel_dB_thresh, active = MSBG.measure_rms(chans[0], fs, -12)
 
-        change_dB = TARGET_SPL - (equiv_0dB_SPL + 20 * np.log10(calculated_rms))
-
         # Rescale input data and check level after rescaling
+        # This is to ensure that the following processing steps are applied correctly
+        change_dB = TARGET_SPL - (equiv_0dB_SPL + 20 * np.log10(calculated_rms))
         chans = [x * np.power(10, 0.05 * change_dB) for x in chans]
         new_rms_db = equiv_0dB_SPL + 10 * np.log10(
             np.mean(np.power(chans[0][idx], 2.0))

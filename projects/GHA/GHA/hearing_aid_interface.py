@@ -3,7 +3,8 @@ import subprocess
 import tempfile
 import numpy as np
 import os
-from scipy.io import wavfile
+
+# from scipy.io import wavfile
 
 import GHA
 from clarity_core.HearingAid import HearingAid
