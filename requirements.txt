@@ -1,0 +1,16 @@
+scipy
+numpy
+wheel
+tqdm
+pandas
+jinja2
+jsonschema
+jsonpath-ng
+soundfile
+pyloudnorm
+-e file:lib/clarity_core
+-e file:projects/GHA
+-e file:projects/MBSTOI
+-e file:projects/MSBG
+-e file:projects/SceneGenerator
+-e file:projects/MSBG/packages/matlab_mldivide
