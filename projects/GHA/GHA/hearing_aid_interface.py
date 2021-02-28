@@ -73,42 +73,27 @@ class GHAHearingAid(HearingAid):
         )
         formatted_sGt = GHA.format_gaintable(gaintable, noisegate_corr=True)
 
-        # Merge CH1 and CH3 files
-        merged_filename = tempfile.gettempdir() + "/merged.wav"
-        if (infile_names[0][-7:-4] in "CH1" == False) or (
-            infile_names[2][-7:-4] in "CH3" == False
-        ):
-            logging.error("GHA infile_names are incorrect.")
+        cfg_template = f"{dirname}/cfg_files/{self.cfg_file}_template.cfg"
+
+        # Merge CH1 and CH3 files - This is th baseline configuration.
+        # CH2 is ignored and CH1 and CH3 are downmixed, i.e. resulting
+        # in one input for each ear.
+        merged_filename = tempfile.mkstemp(prefix="clarity-merged-", suffix=".wav")[1]
         cmd = f"sox -M -V1 -v 1 {infile_names[0]} -v 1 {infile_names[2]} {merged_filename}"
         subprocess.call(cmd, shell=True)
 
-        cfg_filename = GHA.create_configured_cfgfile(
-            merged_filename,
-            outfile_name,
-            formatted_sGt,
-            self.cfg_file,
-            self.ahr,
-        )
-
-        # Start setting up command for subprocess and OpenMHA
-        # Create read command with correct cfg filename
-        cfg_filename = dirname + "/cfg_files/" + cfg_filename
-        maincmd = f"?read:{cfg_filename}"
-        # # Save configuration and contents of monitor variables to text file
-        # logcmd_config = (
-        #     "?save:"
-        #     + dirname
-        #     + "/cfg_files/log/"
-        #     + outfile_name.split("/")[-1][:-4]
-        #     + "_config.txt"
-        # )
-        # logcmd_mons = (
-        #     "?savemons:"
-        #     + dirname
-        #     + "/cfg_files/log/"
-        #     + outfile_name.split("/")[-1][:-4]
-        #     + "_mons.txt"
-        # )
+        # Create the openMHA config file from the template
+        cfg_filename = tempfile.mkstemp(prefix="clarity-openmha-", suffix=".cfg")[1]
+        with open(cfg_filename, "w") as f:
+            f.write(
+                GHA.create_configured_cfgfile(
+                    merged_filename,
+                    outfile_name,
+                    formatted_sGt,
+                    cfg_template,
+                    self.ahr,
+                )
+            )
 
         # Process file using configured cfg file
         # Suppressing OpenMHA output with -q - comment out when testing
@@ -118,17 +103,16 @@ class GHAHearingAid(HearingAid):
                 "mha",
                 "-q",
                 "--log=logfile.txt",
-                maincmd,
+                f"?read:{cfg_filename}",
                 "cmd=start",
                 "cmd=stop",
-                # logcmd_config,
-                # logcmd_mons,
                 "cmd=quit",
             ]
         )
 
-        # Delete temporary signals created by sox.
-        subprocess.call(["rm", "-r", merged_filename])
+        # Delete temporary files.
+        os.remove(merged_filename)
+        os.remove(cfg_filename)
 
         # Check output signal has energy in every channel
         sig = ccs.read_signal(outfile_name)

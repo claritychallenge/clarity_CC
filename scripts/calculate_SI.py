@@ -59,7 +59,7 @@ def calculate_SI(
     maxdelay = int(np.max(delay))
 
     # Allow for value lower than 1000 samples in case of unimpaired hearing
-    if delay > 2000:
+    if maxdelay > 2000:
         logging.error(f"Error in delay calculation for signal time-alignment.")
 
     # For test signals, MBSTOI index tends to be higher when correcting for ddf
