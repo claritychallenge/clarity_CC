@@ -21,8 +21,12 @@ def calculate_SI(
     gridcoarseness=1,
     dry_run=False,
 ):
-    """Run baseline speech intelligibility (SI) algorithm.
-    Requires time alignment of input signals. See comments below.
+    """Run baseline speech intelligibility (SI) algorithm. MBSTOI
+    requires time alignment of input signals. Here we correct for
+    broadband delay introduced by the MSBG hearing loss model.
+    Hearing aids also introduce a small delay, but this depends on
+    the exact implementation. See projects/MBSTOI/README.md.
+
     Outputs can be found in text file sii.txt in /scenes folder.
 
     Args:
@@ -47,32 +51,44 @@ def calculate_SI(
         f"{processed_input_path}/{scene['scene']}_{listener['name']}_HL-output.wav",
     )
 
-    # Calculate unit impulse delay due to HL model and audiogram
+    # Calculate channel-specific unit impulse delay due to HL model and audiograms
     ddf = read_signal(
         f"{processed_input_path}/{scene['scene']}_{listener['name']}_HLddf-output.wav",
     )
-
-    # Currently correcting for maximum delay across two channels
     delay = find_delay_impulse(ddf, initial_value=int(CONFIG.fs / 2))
+
     if delay[0] != delay[1]:
-        logging.debug(f"Difference in delay of {delay[0] - delay[1]}.")
+        logging.info(f"Difference in delay of {delay[0] - delay[1]}.")
+
     maxdelay = int(np.max(delay))
 
     # Allow for value lower than 1000 samples in case of unimpaired hearing
     if maxdelay > 2000:
         logging.error(f"Error in delay calculation for signal time-alignment.")
 
-    # For test signals, MBSTOI index tends to be higher when correcting for ddf
-    # delay + length difference due to delay introduced by MSBG smearer.
-    logging.info(
-        f"Correcting for delay + difference in signal lengths where delay = {delay} and length diff is {len(proc) - len(clean)} samples."
-    )
-    delay = maxdelay + len(proc) - len(clean)
+    # # For baseline software test signals, MBSTOI index tends to be higher when
+    # # correcting for ddf delay + length difference.
+    # diff = len(proc) - len(clean)
+    # if diff < 0:
+    #     logging.error("Check signal length!")
+    #     diff = 0
+    # else:
+    #     logging.info(
+    #         f"Correcting for delay + difference in signal lengths where delay = {delay} and length diff is {diff} samples."
+    #     )
 
-    # Pad signals to ensure equal length
-    cleanpad = np.zeros((len(clean) + delay, 2))
-    cleanpad[delay : (len(clean) + delay), :] = clean
-    procpad = np.zeros((len(clean) + delay, 2))
+    # delay[0] += diff
+    # delay[1] += diff
+
+    # Correct for delays by padding clean signals
+    cleanpad = np.zeros((len(clean) + maxdelay, 2))
+    procpad = np.zeros((len(clean) + maxdelay, 2))
+
+    if len(procpad) < len(proc):
+        raise ValueError(f"Padded processed signal is too short.")
+
+    cleanpad[int(delay[0]) : int(len(clean) + int(delay[0])), 0] = clean[:, 0]
+    cleanpad[int(delay[1]) : int(len(clean) + int(delay[1])), 1] = clean[:, 1]
     procpad[: len(proc)] = proc
 
     # Calculate intelligibility
@@ -123,5 +139,5 @@ if __name__ == "__main__":
                     dry_run=args.dry_run,
                 )
                 output_file.write(
-                    f"Scene {scene['scene']} listener {listener['name']} sii {round(sii,4)} \n"
+                    f"Scene {scene['scene']} listener {listener['name']} sii {round(sii,4)}\n"
                 )
