@@ -13,7 +13,7 @@ stage=1
 # Make data dir if not already there and initialise data/clarity_data
 # to point to the inbuilt test data if link doesn't already exist
 mkdir -p "$DATA_DIR"
-(cd "$DATA_DIR"; ln -hs ../data_test/clarity_data clarity_data)
+(cd "$DATA_DIR"; ln -s ../data_test/clarity_data clarity_data)
 
 if [ $stage -le 1 ]; then
     echo "Downloading HRIR data "

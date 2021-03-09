@@ -85,6 +85,7 @@ def generate_HA_inputs(scene, input_path, output_path, fs, channels, tail_durati
         (f"{prefix}_interferer.wav", interferer),
     ]
 
+    snr_ref = None
     for channel in channels:
         # Load scene BRIRs
         target_brir_fn = f"{brir_stem}_t_CH{channel}.wav"
@@ -97,15 +98,23 @@ def generate_HA_inputs(scene, input_path, output_path, fs, channels, tail_durati
         interferer_at_ear = ccs.apply_brir(interferer, interferer_brir, n_tail=n_tail)
 
         # Scale interferer to obtain SNR specified in scene description
-        snr = scene["SNR"]
-        logging.info(f"Scaling interferer to obtain mixture SNR = {snr} dB.")
-        interferer_at_ear = ccs.scale_noise(
-            target_at_ear,
-            interferer_at_ear,
-            snr,
-            pre_samples=pre_samples,
-            post_samples=post_samples,
-        )
+        snr_dB = scene["SNR"]
+        logging.info(f"Scaling interferer to obtain mixture SNR = {snr_dB} dB.")
+
+        if snr_ref is None:
+            # snr_ref computed for first channel in the list and then
+            # same scaling applied to all
+            snr_ref = ccs.compute_snr(
+                target_at_ear,
+                interferer_at_ear,
+                pre_samples=pre_samples,
+                post_samples=post_samples,
+            )
+            logging.debug(f"Using channel {channel} as reference.")
+
+        # Apply snr_ref reference scaling to get 0 dB and then scale to target snr_dB
+        interferer_at_ear = interferer_at_ear * snr_ref
+        interferer_at_ear = interferer_at_ear * 10 ** ((-snr_dB) / 20)
 
         # Sum target and scaled and ramped interferer
         signal_at_ear = ccs.sum_signals([target_at_ear, interferer_at_ear])
@@ -180,7 +189,8 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    channels = list(range(args.num_channels + 1))
+    # channels = list(range(args.num_channels + 1))
+    channels = list(range(1, args.num_channels + 1)) + [0]
     scene_list = json.load(open(args.scene_list_filename, "r"))
     for scene in tqdm(scene_list):
         if check_scene_exists(scene, args.output_path):

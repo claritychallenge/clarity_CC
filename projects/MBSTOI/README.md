@@ -17,10 +17,11 @@ MBSTOI:
 - thirdoct.py returns the one-third octave band matrix and its centre frequencies
 - remove_silent_frames.py removes silent frames of x and y based on x
 
-Use with caution.
-(1) MBSTOI relies on correct time-alignment of the input clean and 
-processed signals. This may require modifications to the code in
-scripts/calculate_SI.py for your system. We are correcting for 
+Use with caution. 
+
+(1) MBSTOI relies on correct time and frequency alignment of the input 
+clean and processed signals. This may require modifications to the code
+in scripts/calculate_SI.py for your system. We are correcting for 
 broadband delay introduced by the MSBG hearing loss model. Hearing 
 aids also introduce a small delay, but this depends on the exact 
 implementation. You must check that signals are optimally aligned 

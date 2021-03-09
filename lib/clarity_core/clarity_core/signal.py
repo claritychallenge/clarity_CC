@@ -3,7 +3,7 @@
 import numpy as np
 from numpy.fft import fft, ifft, fftshift
 import math
-from scipy.signal import convolve, resample, find_peaks
+from scipy.signal import convolve, find_peaks
 import scipy.io
 import soundfile
 from soundfile import SoundFile
@@ -134,36 +134,35 @@ def apply_brir(signal, brir, n_tail=TAIL_DURATION_CONSTANT):
     return output[0:output_len, :]
 
 
-def scale_noise(target, noise, dBSNR, pre_samples=0, post_samples=-1):
-    """Obtain approximate desired SNR.
+def compute_snr(target, noise, pre_samples=0, post_samples=-1):
+    """Return the SNR.
 
     Take the overlapping segment of the noise and get the speech-weighted
-    better ear SNR.
+    better ear SNR. (Note, SNR is a ratio -- not in dB.)
     """
 
     pre_samples = int(CONFIG.fs * CONFIG.pre_duration)
     post_samples = int(CONFIG.fs * CONFIG.post_duration)
+
     segment_target = target[pre_samples:-post_samples]
     segment_noise = noise[pre_samples:-post_samples]
+    assert len(segment_target) == len(segment_noise)
 
     snr = better_ear_speechweighted_snr(segment_target, segment_noise)
 
-    # Scale the original noise signal to the desired SNR
-    scaled_noise = noise * snr
-    scaled_noise = scaled_noise * 10 ** ((-dBSNR) / 20)
-    return scaled_noise
+    return snr
 
 
-def better_ear_speechweighted_snr(target, section_noise):
+def better_ear_speechweighted_snr(target, noise):
     """Calculate effective better ear SNR."""
     if np.ndim(target) == 1:
         # analysis left ear and right ear for single channel target
-        left_snr = speechweighted_snr(target, section_noise[:, 0])
-        right_snr = speechweighted_snr(target, section_noise[:, 1])
+        left_snr = speechweighted_snr(target, noise[:, 0])
+        right_snr = speechweighted_snr(target, noise[:, 1])
     else:
         # analysis left ear and right ear for two channel target
-        left_snr = speechweighted_snr(target[:, 0], section_noise[:, 0])
-        right_snr = speechweighted_snr(target[:, 1], section_noise[:, 1])
+        left_snr = speechweighted_snr(target[:, 0], noise[:, 0])
+        right_snr = speechweighted_snr(target[:, 1], noise[:, 1])
     # snr is the max of left and right
     be_snr = max(left_snr, right_snr)
     return be_snr

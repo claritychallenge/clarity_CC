@@ -25,12 +25,6 @@ If you use this code in publications, please cite it as follows:
 Details to appear. 
 ```
 
-If you use this code in publications, please cite it as follows:
-
-```
-Details to appear. 
-```
-
 License terms for the data are included in the separately-downloaded data packages. They are summarised below.
 
 - The target utterances are part of the Clarity speech database, and are licensed under the terms of the Clarity speech database license 1.00. This is based on Creative Commons Attribution-ShareAlike 4.0 but with some additional constraints concerning the public replay of audio samples. 

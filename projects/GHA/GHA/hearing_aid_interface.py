@@ -75,7 +75,7 @@ class GHAHearingAid(HearingAid):
 
         cfg_template = f"{dirname}/cfg_files/{self.cfg_file}_template.cfg"
 
-        # Merge CH1 and CH3 files - This is th baseline configuration.
+        # Merge CH1 and CH3 files - This is the baseline configuration.
         # CH2 is ignored and CH1 and CH3 are downmixed, i.e. resulting
         # in one input for each ear.
         merged_filename = tempfile.mkstemp(prefix="clarity-merged-", suffix=".wav")[1]
