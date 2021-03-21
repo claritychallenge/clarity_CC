@@ -14,7 +14,7 @@ You will need,
 
 Visit the `install/` directory. 
 
-- If you are using an Ubuntu linux system, you should be able to install all necessary prerequisites by running `install_prerequisites.unbuntu.sh`
+- If you are using an Ubuntu linux system, you should be able to install all necessary prerequisites by running `install_prerequisites.ubuntu.sh`
 - If you are using a Mac, things are a little more experimental. Please see `install_prerequisites.macos.sh` and read the comments before running.
 
 Once these prerequisites are installed the remaining instructions should be common for Mac and linux.
