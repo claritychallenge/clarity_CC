@@ -13,7 +13,9 @@ from clarity_core.config import CONFIG
 
 def get_hrir(hrir_filename, azimuth):
     """Generate an HRIR for a given azimuth using an hrir file."""
-    azimuth = round(azimuth, 1)
+
+    # Flip sign of azimuth to get change in coordinate system
+    azimuth = round(-azimuth, 1)
     target_hrir = loadmat(hrir_filename)
     directions = target_hrir["M_directions"]
     idx = (directions[1, :] == 0) & (directions[0, :] == azimuth)
@@ -189,8 +191,13 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    # channels = list(range(args.num_channels + 1))
-    channels = list(range(1, args.num_channels + 1)) + [0]
+    if args.num_channels == 0:
+        # This will only generate the initial target, masker and anechoic target signal
+        channels = []
+    else:
+        # ... as above plus N hearing aid input channels plus 'channel 0' (the eardrum signal).
+        # e.g. num_channel = 2  => channels [1, 2, 0]
+        channels = list(range(1, args.num_channels + 1)) + [0]
     scene_list = json.load(open(args.scene_list_filename, "r"))
     for scene in tqdm(scene_list):
         if check_scene_exists(scene, args.output_path):

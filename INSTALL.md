@@ -14,7 +14,7 @@ You will need,
 
 Visit the `install/` directory. 
 
-- If you are using an Ubuntu linux system, you should be able to install all necessary prerequisites by running `install_prerequisites.unbuntu.sh`
+- If you are using an Ubuntu linux system, you should be able to install all necessary prerequisites by running `install_prerequisites.ubuntu.sh`
 - If you are using a Mac, things are a little more experimental. Please see `install_prerequisites.macos.sh` and read the comments before running.
 
 Once these prerequisites are installed the remaining instructions should be common for Mac and linux.
@@ -139,15 +139,15 @@ There is a script `run_all.sh` that runs all of the above steps.
 If you are unable to run the scene generation code, then pre-generated scenes can be downloaded directly. The data is available at the same download address. There are three files:
 
 ```bash
-clarity_CEC1_data.scenes_dev.v1_0.tgz  [59 GB] -- targets, mixtures and interferers
-clarity_CEC1_data.scenes_train.part1.v1_0.tgz [90 GB]  -- targets and mixtures
-clarity_CEC1_data.scenes_train.part2.v1_0.tgz [47 GB]  -- interferers
+clarity_CEC1_data.scenes_dev.v1_1.tgz  [59 GB] -- targets, mixtures and interferers
+clarity_CEC1_data.scenes_train.part1.v1_1.tgz [90 GB]  -- targets and mixtures
+clarity_CEC1_data.scenes_train.part2.v1_1.tgz [47 GB]  -- interferers
 ```
 
 Once they are downloaded they can be unpacked into the correct place with,
 
 ```bash
-tar -xvzf -C <TARGET_DIR> -k clarity_CEC1_data.scenes_dev.v1_0.tgz
+tar -xvzf -C <TARGET_DIR> -k clarity_CEC1_data.scenes_dev.v1_1.tgz
 ```
 
 where `TARGET_DIR` is the location at which you installed the main Clarity data package (see stage 3 above).
@@ -212,8 +212,8 @@ on insertion gains. The prescription is set to have a maximum output level, para
 max_output_level, of 100 dB SPL. The default configuration file for GHA is set to
 'prerelease_combination3_smooth'.
 
-A convention is used to estimate the level of signals as they pass through the pipeline.
-The convention is that a +/-1 square wave has RMS = 0dB (full scale or FS). Further, up
+In the baseline, a convention is used to estimate the level of signals as they pass through 
+the pipeline: that a +/-1 square wave has RMS = 0dB (full scale or FS). Further, up
 to the point of signals being produced by the GHA module, the convention is that 0 dB FS
 is equal to 100 dB SPL. See parameter equiv0dBSPL. From that point onwards, as GHA
 provides 20 dB of amplification headroom (parameter ahr), the convention is that 0 dB FS

@@ -53,9 +53,12 @@ class ClarityConfig(configparser.ConfigParser):
         #            "clarity", "NONSPEECHINT_SNRS", fallback=[0, 10]
         #        )
         # self.addnoise = self.getint("clarity", "ADDNOISE", fallback=0)
-        # self.norm_lufs = self.getint("clarity", "NORM_LUFS", fallback=-12)
-        # self.clip_limit = self.getint("clarity", "CLIP_LIMIT", fallback=1)
-
+        self.norm_lufs = self.getint("clarity", "NORM_LUFS", fallback=-36)
+        self.clip_limit = self.getint("clarity", "CLIP_LIMIT", fallback=1)
+        self.comp_thresh = self.getint("clarity", "COMP_THRESH", fallback=-10)
+        self.comp_CR = self.getint("clarity", "COMP_CR", fallback=5)
+        self.comp_AT = self.getfloat("clarity", "COMP_AT", fallback=0.002)
+        self.comp_RT = self.getfloat("clarity", "COMP_RT", fallback=0.05)
 
 config_filename = None
 if "CLARITY_ROOT" in os.environ:

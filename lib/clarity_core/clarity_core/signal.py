@@ -219,17 +219,22 @@ def find_delay(x, y):
     return shift
 
 
-# def find_delay_impulse(ddf, initial_value=22050):
-#     """Find delay in signal ddf given initial location of unit impulse, initial_value."""
-#     pk = find_peaks(ddf[:, 0])  # take left signal as reference
-#     delay = 0
-#     if len(pk[0]) > 0:
-#         # m = np.max(ddf[pk[0], 0])
-#         pkmax = np.argmax(ddf[:, 0])
-#         delay = pkmax - initial_value
-#     else:
-#         logging.error("Error in selecting peaks.")
-#     return delay
+def create_HA_inputs(infile_names, merged_filename):
+    """Create input signal for hearing aids."""
+
+    if (infile_names[0][-5] != '1') or (infile_names[2][-5] != '3'):
+        raise Exception("HA-input signal error: channel mismatch!") 
+
+    signal_CH1 = read_signal(infile_names[0])
+    signal_CH3 = read_signal(infile_names[2])
+
+    merged_signal = np.zeros((len(signal_CH1),4))
+    merged_signal[:,0] = signal_CH1[:,0] # channel index 0 = front microphone on the left hearing aid 
+    merged_signal[:,1] = signal_CH1[:,1] # channel index 1 = front microphone on the right hearing aid
+    merged_signal[:,2] = signal_CH3[:,0] # channel index 2 = rear microphone on the left hearing aid
+    merged_signal[:,3] = signal_CH3[:,1] # channel index 3 = rear microphone on the right hearing aid
+
+    write_signal(merged_filename, merged_signal, CONFIG.fs, floating_point=True)
 
 
 def find_delay_impulse(ddf, initial_value=22050):
@@ -251,23 +256,152 @@ def find_delay_impulse(ddf, initial_value=22050):
     return delay
 
 
-def soft_clip(x, clip_limit=1):
-    """Implementation of a cubic soft-clipper
-    https://ccrma.stanford.edu/~jos/pasp/Cubic_Soft_Clipper.html
+def compressor_twochannel(x,Fs,T,R,attackTime,releaseTime):
     """
-    deg = 3
+    This function implements a two channel compressor where the 
+    same scaling is applied to both channels. This function is based on
+    the standard MATLAB dynamic range compressor [1] and its "Hack 
+    Audio" implementation: https://www.hackaudio.com/ 
+    
+    [1] Giannoulis, Dimitrios, Michael Massberg, and Joshua D. Reiss. "Digital 
+    Dynamic Range Compressor Design: A Tutorial and Analysis." Journal of 
+    Audio Engineering Society. Vol. 60, Issue 6, 2012, pp. 399-408.
+    
 
-    maxamp = np.max(abs(x))
+    Args:
+        x (ndarray): signal.
+        Fs (int): sampling rate.
+        T (int): threshold relative to 0 dBFS.
+        R (int): compression ratio.
+        attackTime (float): attack time in seconds.
+        releaseTime (float): release time in seconds.
 
-    if maxamp < clip_limit:
-        return x
-    elif maxamp >= clip_limit:
-        xclipped = np.where(
-            x > clip_limit,
-            (deg - 1) / deg,
-            np.where(x < -clip_limit, -(deg - 1) / deg, x - x ** deg / deg),
-        )
-        return xclipped
+    Returns:
+        ndarray: signal y
+
+
+    """
+    N = len(x)
+    channels = np.shape(x)[1]
+    if channels != 2:
+        raise ValueError("Channel mismatch.")
+    y = np.zeros((N,2))
+    lin_A = np.zeros((N,1))
+    
+    # Get attack and release times
+    alphaA = np.exp(-np.log(9)/(Fs * attackTime))
+    alphaR = np.exp(-np.log(9)/(Fs * releaseTime))
+    
+    gainSmoothPrev = 0 # Initialise smoothed gain variable
+    
+    # Loop over each sample
+    for n in range(N):
+        # Derive dB of sample x[n]
+        xn_left = np.abs(x[n,0])
+        xn_right = np.abs(x[n,1])
+        xn = max(xn_left, xn_right)
+        with np.errstate(divide='ignore'):
+            x_dB = 20*np.log10(np.divide(xn,1))
+
+        # Ensure there are no values of negative infinity
+        if x_dB < -96:
+            x_dB = -96
+        
+        # Check if sample is above threshold T
+        # Static Characteristic - applying hard knee
+        if x_dB > T:
+            gainSC = T + (x_dB - T)/R # Perform compression
+        else:
+            gainSC = x_dB # No compression 
+        
+        # Compute the gain change as the difference
+        gainChange_dB = gainSC - x_dB
+        
+        # Smooth the gain change using the attack and release times
+        if gainChange_dB < gainSmoothPrev:
+            # Attack
+            gainSmooth = ((1-alphaA)*gainChange_dB)+(alphaA*gainSmoothPrev)
+        else:
+            # Release
+            gainSmooth = ((1-alphaR)*gainChange_dB)+(alphaR*gainSmoothPrev)
+    
+        # Translate the gain to the linear domain
+        lin_A[n,0] = 10 ** (np.divide(gainSmooth,20))
+        
+        # Apply linear amplitude to input sample
+        y[n,0] = lin_A[n,0] * x[n,0]
+        y[n,1] = lin_A[n,0] * x[n,1]
+        
+        # Update smoothed gain
+        gainSmoothPrev = gainSmooth
+    
+    return y
+
+# def get_rms_blocks(data,fs,block_size):
+    
+#     input_data = data.copy()
+
+#     numChannels = input_data.shape[1]        
+#     numSamples  = input_data.shape[0]
+
+#     overlap = 0.75 # Overlap of 75% of the block duration
+#     step = 1.0 - overlap # Step size by percentage
+
+#     T = numSamples/fs # length of the input in seconds
+#     numBlocks = int(np.round(((T - block_size) / (block_size * step))) + 1)
+#     block_range = np.arange(0, numBlocks)
+#     rms = np.zeros(shape=(numChannels,numBlocks))
+
+#     for ch in range(numChannels):
+#         for block in block_range:
+#             l = int(block_size * (block * step) * fs) # Lower bound of integration (in samples)
+#             u = int(block_size * (block * step + 1) * fs) # Upper bound of integration (in samples)
+#             # Calculate rms
+#             with np.errstate(divide='ignore'):
+#                 rms[ch,block] = np.sqrt(np.mean(input_data[l:u,ch] ** 2))
+            
+#     return rms
+
+# def crest_factor(x):
+#     """
+#     Calculate crest factor using 35 ms block size.
+
+#     Args:
+#         x (array): signal vector
+
+#     Returns:
+#         float: CF is crest factor
+#         float: CFdB is crest factor in dB
+
+#     """
+
+#     rms_x = np.sqrt(np.mean(x**2))
+#     block_size = 0.035
+#     peaks = get_rms_blocks(x,CONFIG.fs,block_size)
+#     peak = np.max(abs(peaks))
+
+#     CF = peak/rms_x
+#     CFdB = 20 * np.log10(CF)
+
+#     return CF, CFdB, peak
+
+# def soft_clip(x, clip_limit=1):
+#     """Implementation of a cubic soft-clipper
+#     https://ccrma.stanford.edu/~jos/pasp/Cubic_Soft_Clipper.html
+#     """
+#     deg = 3
+
+#     maxamp = np.max(abs(x))
+
+#     if maxamp < clip_limit:
+#         return x
+#     elif maxamp >= clip_limit:
+#         xclipped = np.where(
+#             x > clip_limit,
+#             (deg - 1) / deg,
+#             np.where(x < -clip_limit, -(deg - 1) / deg, x - x ** deg / deg),
+#         )
+#         return xclipped
 
 
 # def asl_P56(x, fs, nbits):
@@ -416,3 +550,5 @@ def soft_clip(x, clip_limit=1):
 #     cc = midthr
 
 #     return asl_ms_log, cc
+
+

@@ -4,8 +4,6 @@ import tempfile
 import numpy as np
 import os
 
-# from scipy.io import wavfile
-
 import GHA
 from clarity_core.HearingAid import HearingAid
 import clarity_core.signal as ccs
@@ -75,12 +73,10 @@ class GHAHearingAid(HearingAid):
 
         cfg_template = f"{dirname}/cfg_files/{self.cfg_file}_template.cfg"
 
-        # Merge CH1 and CH3 files - This is the baseline configuration.
-        # CH2 is ignored and CH1 and CH3 are downmixed, i.e. resulting
-        # in one input for each ear.
+        # Merge CH1 and CH3 files. This is the baseline configuration.
+        # CH2 is ignored.
         merged_filename = tempfile.mkstemp(prefix="clarity-merged-", suffix=".wav")[1]
-        cmd = f"sox -M -V1 -v 1 {infile_names[0]} -v 1 {infile_names[2]} {merged_filename}"
-        subprocess.call(cmd, shell=True)
+        ccs.create_HA_inputs(infile_names, merged_filename)
 
         # Create the openMHA config file from the template
         cfg_filename = tempfile.mkstemp(prefix="clarity-openmha-", suffix=".cfg")[1]
