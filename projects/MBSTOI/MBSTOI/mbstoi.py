@@ -84,7 +84,7 @@ def mbstoi(xl, xr, yl, yr, gridcoarseness=1):
 
     # Handle case when signals are zeros
     if (
-        abs(np.log10(np.linalg.norm(xl) / np.linalg.norm(xl))) > 5.0
+        abs(np.log10(np.linalg.norm(xl) / np.linalg.norm(yl))) > 5.0
         or abs(np.log10(np.linalg.norm(xr) / np.linalg.norm(yr))) > 5.0
     ):
         sii = 0

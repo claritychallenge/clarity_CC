@@ -128,6 +128,10 @@ def generate_HA_inputs(scene, input_path, output_path, fs, channels, tail_durati
             ]
         )
 
+    if channels == []:
+        target_brir_fn = f"{brir_stem}_t_CH0.wav"
+        target_brir = ccs.read_signal(target_brir_fn)
+
     # Construct the anechoic target reference signal
     hrir_filename = f"{input_path}/hrir/HRIRs_MAT/{scene['hrirfilename']}.mat"
     azimuth = scene["azimuth_target_listener"]
