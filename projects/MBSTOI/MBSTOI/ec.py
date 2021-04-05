@@ -28,7 +28,7 @@ def ec(
     To obtain performance similar to that of humans,the EC stage adds jitter
     We are searching for the level and time adjustments that maximise the
     intermediate correlation coefficients d.
-    Will add location of source and interferer to this to reduce search space.
+    Could add location of source and interferer to this to reduce search space.
     Args:
         xl_hat(ndarray): clean L short-time DFT coefficients (single-sided) per frequency bin and frame
         xr_hat(ndarray): clean R short-time DFT coefficients (single-sided) per frequency bin and frame
@@ -123,7 +123,7 @@ def ec(
             eyy = np.real(firstpart - secondpart - thirdpart + fourthpart)
 
             # Ensure that intermediate correlation will be sensible and compute it
-            # If all mimimum values are less than 1e-40, set d[i,jj] to -1
+            # If all minimum values are less than 1e-40, set d[i,jj] to -1
             if np.min(abs(exx * eyy), axis=0).all() < 1e-40:
                 d[i, jj] = -1
                 continue

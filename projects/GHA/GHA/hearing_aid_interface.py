@@ -75,11 +75,21 @@ class GHAHearingAid(HearingAid):
 
         # Merge CH1 and CH3 files. This is the baseline configuration.
         # CH2 is ignored.
-        merged_filename = tempfile.mkstemp(prefix="clarity-merged-", suffix=".wav")[1]
+        fd_merged, merged_filename = tempfile.mkstemp(
+            prefix="clarity-merged-", suffix=".wav"
+        )
+        # Only need file name; must immediately close the unused file handle.
+        os.close(fd_merged)
+
         ccs.create_HA_inputs(infile_names, merged_filename)
 
         # Create the openMHA config file from the template
-        cfg_filename = tempfile.mkstemp(prefix="clarity-openmha-", suffix=".cfg")[1]
+        fd_cfg, cfg_filename = tempfile.mkstemp(
+            prefix="clarity-openmha-", suffix=".cfg"
+        )
+        # Again, only need file name; must immediately close the unused file handle.
+        os.close(fd_cfg)
+
         with open(cfg_filename, "w") as f:
             f.write(
                 GHA.create_configured_cfgfile(

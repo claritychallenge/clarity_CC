@@ -41,10 +41,10 @@ def mbstoi(xl, xr, yl, yr, gridcoarseness=1):
     dyn_range = 40  # Speech dynamic range in dB
 
     # Values to define EC grid
-    tau_min = -0.001  # Minumum interaural delay compensation in seconds. B: -0.01.
+    tau_min = -0.001  # Minimum interaural delay compensation in seconds. B: -0.01.
     tau_max = 0.001  # Maximum interaural delay compensation in seconds. B: 0.01.
     ntaus = math.ceil(100 / gridcoarseness)  # Number of tau values to try out
-    gamma_min = -20  # Minumum interaural level compensation in dB
+    gamma_min = -20  # Minimum interaural level compensation in dB
     gamma_max = 20  # Maximum interaural level compensation in dB
     ngammas = math.ceil(40 / gridcoarseness)  # Number of gamma values to try out
 
