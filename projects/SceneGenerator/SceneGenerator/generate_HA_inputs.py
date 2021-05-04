@@ -11,31 +11,6 @@ from clarity_core.loadmat import loadmat
 from clarity_core.config import CONFIG
 
 
-def get_hrir(hrir_filename, azimuth):
-    """Generate an HRIR for a given azimuth using an hrir file."""
-
-    # Flip sign of azimuth to get change in coordinate system
-    azimuth = round(-azimuth, 1)
-    target_hrir = loadmat(hrir_filename)
-    directions = target_hrir["M_directions"]
-    idx = (directions[1, :] == 0) & (directions[0, :] == azimuth)
-    if any(idx) == False:
-        azimuth_degrees = np.zeros(48)
-        azimuth_degrees[:24] = np.arange(0, 180, 7.5)
-        azimuth_degrees[24:] = np.arange(-180, 0, 7.5)
-        idx = np.where(
-            np.abs(azimuth_degrees - azimuth)
-            == np.min(np.abs(azimuth_degrees - azimuth))
-        )
-        azimuth = azimuth_degrees[idx]
-        idx = (directions[1, :] == 0) & (directions[0, :] == azimuth)
-    target_hrir = np.squeeze(target_hrir["M_data"][:, idx, :])
-
-    # Downsample HRIR from 48000 to 44100
-    l = len(target_hrir)
-    target_hrir = resample(target_hrir, int(l * (CONFIG.fs / 48000) + 1))
-    return target_hrir
-
 
 def generate_HA_inputs(scene, input_path, output_path, fs, channels, tail_duration):
 
@@ -63,6 +38,7 @@ def generate_HA_inputs(scene, input_path, output_path, fs, channels, tail_durati
     interferer = scene["interferer"]["name"]
     room = scene["room"]["name"]
     brir_stem = f"{input_path}/{dataset}/rooms/brir/brir_{room}"
+    anechoic_brir_stem = f"{input_path}/{dataset}/rooms/brir/anech_brir_{room}"
 
     target_fn = f"{input_path}/{dataset}/targets/{target}.wav"
     interferer_fn = f"{input_path}/{dataset}/interferers/{noise_type}/{interferer}.wav"
@@ -133,11 +109,11 @@ def generate_HA_inputs(scene, input_path, output_path, fs, channels, tail_durati
         target_brir = ccs.read_signal(target_brir_fn)
 
     # Construct the anechoic target reference signal
-    hrir_filename = f"{input_path}/hrir/HRIRs_MAT/{scene['hrirfilename']}.mat"
-    azimuth = scene["azimuth_target_listener"]
-    target_hrir = get_hrir(hrir_filename, azimuth)
-    target_hrir_pad = ccs.pad(target_hrir, len(target_brir))
-    target_anechoic = ccs.apply_brir(target, target_hrir_pad, n_tail=n_tail)
+    anechoic_brir_fn = f"{anechoic_brir_stem}_t_CH1.wav"  # CH1 used for the anechoic signal
+    anechoic_brir = ccs.read_signal(anechoic_brir_fn)
+    # Padding the anechoic brir very inefficient but keeps it simple
+    anechoic_brir_pad = ccs.pad(anechoic_brir, len(target_brir))
+    target_anechoic = ccs.apply_brir(target, anechoic_brir_pad, n_tail=n_tail)
 
     outputs.append((f"{prefix}_target_anechoic.wav", target_anechoic))
 

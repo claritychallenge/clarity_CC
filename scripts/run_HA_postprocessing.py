@@ -38,8 +38,8 @@ def run_HA_postprocessing(
     # signal_ha = signal_ha[0:minlen, :]
     # signal_at_ear = signal_at_ear[0:minlen, :]
 
-    # if dry_run:
-    #     return
+    if dry_run:
+        return
 
     # latent_silence = np.zeros((int(latency * fs), 2))
 
