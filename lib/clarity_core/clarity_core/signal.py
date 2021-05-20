@@ -62,19 +62,23 @@ def read_signal(filename, offset=0, nsamples=-1, nchannels=0, offset_is_samples=
 
 
 def write_signal(filename, x, fs, floating_point=True):
-    """Write a signal as 16 bit int or floating point wav file."""
+    """Write a signal as fixed or floating point wav file."""
 
     if fs != CONFIG.fs:
-        logging.error(f"Sampling rate mismatch: {filename} with sr={fs}.")
-        raise ValueError("Sampling rate mismatch")
-
-    subtype = "FLOAT" if floating_point else "PCM_16"
-
-    # If signal is float and we want int16
+        logging.warning(f"Sampling rate mismatch: {filename} with sr={fs}.")
+        # raise ValueError("Sampling rate mismatch")
+    
     if floating_point is False:
-        x *= 32768
-        x = x.astype(np.dtype("int16"))
-        assert np.max(x) <= 32767 and np.min(x) >= -32768
+        if CONFIG.test_nbits == 16:
+            subtype = "PCM_16"
+            # If signal is float and we want int16
+            x *= 32768
+            x = x.astype(np.dtype("int16"))
+            assert np.max(x) <= 32767 and np.min(x) >= -32768
+        elif CONFIG.test_nbits == 24: 
+            subtype = "PCM_24"
+    else:
+        subtype = "FLOAT"
 
     soundfile.write(filename, x, fs, subtype=subtype)
 
@@ -220,19 +224,27 @@ def find_delay(x, y):
 
 
 def create_HA_inputs(infile_names, merged_filename):
-    """Create input signal for hearing aids."""
+    """Create input signal for baseline hearing aids."""
 
-    if (infile_names[0][-5] != '1') or (infile_names[2][-5] != '3'):
-        raise Exception("HA-input signal error: channel mismatch!") 
+    if (infile_names[0][-5] != "1") or (infile_names[2][-5] != "3"):
+        raise Exception("HA-input signal error: channel mismatch!")
 
     signal_CH1 = read_signal(infile_names[0])
     signal_CH3 = read_signal(infile_names[2])
 
-    merged_signal = np.zeros((len(signal_CH1),4))
-    merged_signal[:,0] = signal_CH1[:,0] # channel index 0 = front microphone on the left hearing aid 
-    merged_signal[:,1] = signal_CH1[:,1] # channel index 1 = front microphone on the right hearing aid
-    merged_signal[:,2] = signal_CH3[:,0] # channel index 2 = rear microphone on the left hearing aid
-    merged_signal[:,3] = signal_CH3[:,1] # channel index 3 = rear microphone on the right hearing aid
+    merged_signal = np.zeros((len(signal_CH1), 4))
+    merged_signal[:, 0] = signal_CH1[
+        :, 0
+    ]  # channel index 0 = front microphone on the left hearing aid
+    merged_signal[:, 1] = signal_CH1[
+        :, 1
+    ]  # channel index 1 = front microphone on the right hearing aid
+    merged_signal[:, 2] = signal_CH3[
+        :, 0
+    ]  # channel index 2 = rear microphone on the left hearing aid
+    merged_signal[:, 3] = signal_CH3[
+        :, 1
+    ]  # channel index 3 = rear microphone on the right hearing aid
 
     write_signal(merged_filename, merged_signal, CONFIG.fs, floating_point=True)
 
@@ -256,111 +268,117 @@ def find_delay_impulse(ddf, initial_value=22050):
     return delay
 
 
-def compressor_twochannel(x,Fs,T,R,attackTime,releaseTime):
-    """
-    This function implements a two channel compressor where the 
-    same scaling is applied to both channels. This function is based on
-    the standard MATLAB dynamic range compressor [1] and its "Hack 
-    Audio" implementation: https://www.hackaudio.com/ 
-    
-    [1] Giannoulis, Dimitrios, Michael Massberg, and Joshua D. Reiss. "Digital 
-    Dynamic Range Compressor Design: A Tutorial and Analysis." Journal of 
-    Audio Engineering Society. Vol. 60, Issue 6, 2012, pp. 399-408.
-    
+# def compressor_twochannel(x, Fs, T, R, attackTime, releaseTime):
+#     """
+#     This function implements a two channel compressor where the
+#     same scaling is applied to both channels. This function is based on
+#     the standard MATLAB dynamic range compressor [1] and its "Hack
+#     Audio" implementation: https://www.hackaudio.com/
 
-    Args:
-        x (ndarray): signal.
-        Fs (int): sampling rate.
-        T (int): threshold relative to 0 dBFS.
-        R (int): compression ratio.
-        attackTime (float): attack time in seconds.
-        releaseTime (float): release time in seconds.
-
-    Returns:
-        ndarray: signal y
+#     [1] Giannoulis, Dimitrios, Michael Massberg, and Joshua D. Reiss. "Digital
+#     Dynamic Range Compressor Design: A Tutorial and Analysis." Journal of
+#     Audio Engineering Society. Vol. 60, Issue 6, 2012, pp. 399-408.
 
 
-    """
-    N = len(x)
-    channels = np.shape(x)[1]
-    if channels != 2:
-        raise ValueError("Channel mismatch.")
-    y = np.zeros((N,2))
-    lin_A = np.zeros((N,1))
-    
-    # Get attack and release times
-    alphaA = np.exp(-np.log(9)/(Fs * attackTime))
-    alphaR = np.exp(-np.log(9)/(Fs * releaseTime))
-    
-    gainSmoothPrev = 0 # Initialise smoothed gain variable
-    
-    # Loop over each sample
-    for n in range(N):
-        # Derive dB of sample x[n]
-        xn_left = np.abs(x[n,0])
-        xn_right = np.abs(x[n,1])
-        xn = max(xn_left, xn_right)
-        with np.errstate(divide='ignore'):
-            x_dB = 20*np.log10(np.divide(xn,1))
+#     Args:
+#         x (ndarray): signal.
+#         Fs (int): sampling rate.
+#         T (int): threshold relative to 0 dBFS.
+#         R (int): compression ratio.
+#         attackTime (float): attack time in seconds.
+#         releaseTime (float): release time in seconds.
 
-        # Ensure there are no values of negative infinity
-        if x_dB < -96:
-            x_dB = -96
-        
-        # Check if sample is above threshold T
-        # Static Characteristic - applying hard knee
-        if x_dB > T:
-            gainSC = T + (x_dB - T)/R # Perform compression
-        else:
-            gainSC = x_dB # No compression 
-        
-        # Compute the gain change as the difference
-        gainChange_dB = gainSC - x_dB
-        
-        # Smooth the gain change using the attack and release times
-        if gainChange_dB < gainSmoothPrev:
-            # Attack
-            gainSmooth = ((1-alphaA)*gainChange_dB)+(alphaA*gainSmoothPrev)
-        else:
-            # Release
-            gainSmooth = ((1-alphaR)*gainChange_dB)+(alphaR*gainSmoothPrev)
-    
-        # Translate the gain to the linear domain
-        lin_A[n,0] = 10 ** (np.divide(gainSmooth,20))
-        
-        # Apply linear amplitude to input sample
-        y[n,0] = lin_A[n,0] * x[n,0]
-        y[n,1] = lin_A[n,0] * x[n,1]
-        
-        # Update smoothed gain
-        gainSmoothPrev = gainSmooth
-    
-    return y
+#     Returns:
+#         ndarray: signal y
 
-# def get_rms_blocks(data,fs,block_size):
-    
+
+#     """
+#     N = len(x)
+#     channels = np.shape(x)[1]
+#     if channels != 2:
+#         raise ValueError("Channel mismatch.")
+#     y = np.zeros((N, 2))
+#     lin_A = np.zeros((N, 1))
+
+#     # Get attack and release times
+#     alphaA = np.exp(-np.log(9) / (Fs * attackTime))
+#     alphaR = np.exp(-np.log(9) / (Fs * releaseTime))
+
+#     gainSmoothPrev = 0  # Initialise smoothed gain variable
+
+#     # Loop over each sample
+#     for n in range(N):
+#         # Derive dB of sample x[n]
+#         xn_left = np.abs(x[n, 0])
+#         xn_right = np.abs(x[n, 1])
+#         xn = max(xn_left, xn_right)
+#         with np.errstate(divide="ignore"):
+#             x_dB = 20 * np.log10(np.divide(xn, 1))
+
+#         # Ensure there are no values of negative infinity
+#         if x_dB < -96:
+#             x_dB = -96
+
+#         # Check if sample is above threshold T
+#         # Static Characteristic - applying hard knee
+#         if x_dB > T:
+#             gainSC = T + (x_dB - T) / R  # Perform compression
+#         else:
+#             gainSC = x_dB  # No compression
+
+#         # Compute the gain change as the difference
+#         gainChange_dB = gainSC - x_dB
+
+#         # Smooth the gain change using the attack and release times
+#         if gainChange_dB < gainSmoothPrev:
+#             # Attack
+#             gainSmooth = ((1 - alphaA) * gainChange_dB) + (alphaA * gainSmoothPrev)
+#         else:
+#             # Release
+#             gainSmooth = ((1 - alphaR) * gainChange_dB) + (alphaR * gainSmoothPrev)
+
+#         # Translate the gain to the linear domain
+#         lin_A[n, 0] = 10 ** (np.divide(gainSmooth, 20))
+
+#         # Apply linear amplitude to input sample
+#         y[n, 0] = lin_A[n, 0] * x[n, 0]
+#         y[n, 1] = lin_A[n, 0] * x[n, 1]
+
+#         # Update smoothed gain
+#         gainSmoothPrev = gainSmooth
+
+#     return y
+
+
+# def get_rms_blocks(data, fs, block_size):
+
 #     input_data = data.copy()
 
-#     numChannels = input_data.shape[1]        
-#     numSamples  = input_data.shape[0]
+#     numChannels = input_data.shape[1]
+#     numSamples = input_data.shape[0]
 
-#     overlap = 0.75 # Overlap of 75% of the block duration
-#     step = 1.0 - overlap # Step size by percentage
+#     overlap = 0.75  # Overlap of 75% of the block duration
+#     step = 1.0 - overlap  # Step size by percentage
 
-#     T = numSamples/fs # length of the input in seconds
+#     T = numSamples / fs  # length of the input in seconds
 #     numBlocks = int(np.round(((T - block_size) / (block_size * step))) + 1)
 #     block_range = np.arange(0, numBlocks)
-#     rms = np.zeros(shape=(numChannels,numBlocks))
+#     rms = np.zeros(shape=(numChannels, numBlocks))
 
 #     for ch in range(numChannels):
 #         for block in block_range:
-#             l = int(block_size * (block * step) * fs) # Lower bound of integration (in samples)
-#             u = int(block_size * (block * step + 1) * fs) # Upper bound of integration (in samples)
+#             l = int(
+#                 block_size * (block * step) * fs
+#             )  # Lower bound of integration (in samples)
+#             u = int(
+#                 block_size * (block * step + 1) * fs
+#             )  # Upper bound of integration (in samples)
 #             # Calculate rms
-#             with np.errstate(divide='ignore'):
-#                 rms[ch,block] = np.sqrt(np.mean(input_data[l:u,ch] ** 2))
-            
+#             with np.errstate(divide="ignore"):
+#                 rms[ch, block] = np.sqrt(np.mean(input_data[l:u, ch] ** 2))
+
 #     return rms
+
 
 # def crest_factor(x):
 #     """
@@ -550,5 +568,3 @@ def compressor_twochannel(x,Fs,T,R,attackTime,releaseTime):
 #     cc = midthr
 
 #     return asl_ms_log, cc
-
-

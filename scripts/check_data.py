@@ -43,12 +43,21 @@ def check_data(data_root, dataset):
         for source in ["t", "i1"]
         for channel in ["CH0", "CH1", "CH2", "CH3"]
     ]
+
+    anech_brir_files = [
+        f"{brir_dir}/anech_brir_{room}_t_CH1.wav"
+        for room in rooms
+    ]  
+
     hrir_files = [f"{hrir_dir}/{hrir}.mat" for hrir in hrirs]
     target_files = [f"{target_dir}/{target}.wav" for target in targets]
     masker_files = [f"{masker_dir}/{type}/{name}.wav" for name, type in maskers]
 
     print("Checking brir files")
     missing = check_files(brir_files)
+
+    print("Checking anechoic brir files")
+    missing = check_files(anech_brir_files)
 
     print("Checking hrir files")
     missing |= check_files(hrir_files)
