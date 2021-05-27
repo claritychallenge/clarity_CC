@@ -38,7 +38,7 @@ def generate_HA_inputs(scene, input_path, output_path, fs, channels, tail_durati
     interferer = scene["interferer"]["name"]
     room = scene["room"]["name"]
     brir_stem = f"{input_path}/{dataset}/rooms/brir/brir_{room}"
-    anechoic_brir_stem = f"{input_path}/{dataset}/rooms/brir/brir_{room}"
+    anechoic_brir_stem = f"{input_path}/{dataset}/rooms/brir/anech_brir_{room}"
 
     target_fn = f"{input_path}/{dataset}/targets/{target}.wav"
     interferer_fn = f"{input_path}/{dataset}/interferers/{noise_type}/{interferer}.wav"
