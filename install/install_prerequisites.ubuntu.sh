@@ -5,8 +5,8 @@
 #
 
 sudo -n true  >& /dev/null
-test $? -eq 0 || { echo "You require sudo privilege to run this script"; exit 1
-; }
+test $? -eq 0 || { echo "You require sudo privilege to run this script"; exit 1; }
+
 
 echo Installing pre-requisites
 while read -r p ; do sudo apt-get install -y $p ; done < <(cat << "EOF"
