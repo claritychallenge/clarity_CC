@@ -1,0 +1,4 @@
+scipy
+numpy
+dataclasses
+file:../../lib/clarity_core

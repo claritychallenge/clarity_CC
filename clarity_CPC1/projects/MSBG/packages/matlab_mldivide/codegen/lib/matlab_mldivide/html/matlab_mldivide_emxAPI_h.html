@@ -1,0 +1,52 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>RTW Report - matlab_mldivide_emxAPI.h</title>
+<script language="JavaScript" type="text/javascript" src="rtwreport_utils.js"></script>
+</head>
+<body bgcolor="#eeeeee" text="#1122aa" onload="try {if (top) { if (top.rtwFileOnLoad) top.rtwFileOnLoad(window.document); else local_onload();}} catch(err) {};">
+<p>
+<table border="0" cellspacing="0" cellpadding="6" width="100%%" height="100%%"><tr><td width="100%%" valign="top" bgcolor="#ffffff">
+<h4>File: <a href="../matlab_mldivide_emxAPI.h" target="rtwreport_document_frame" id="linkToText_plain">matlab_mldivide_emxAPI.h</a></h4>
+<pre id="RTWcode">
+<a name="1"><font color="#888888 "><i>    1   </i></font></a><font color="#117755"><i>//</i></font>
+<a name="2"><font color="#888888 "><i>    2   </i></font></a><font color="#117755"><i>// File: matlab_mldivide_emxAPI.h</i></font>
+<a name="3"><font color="#888888 "><i>    3   </i></font></a><font color="#117755"><i>//</i></font>
+<a name="4"><font color="#888888 "><i>    4   </i></font></a><font color="#117755"><i>// MATLAB Coder version            : 2.8</i></font>
+<a name="5"><font color="#888888 "><i>    5   </i></font></a><font color="#117755"><i>// C/C++ source code generated on  : 22-Mar-2016 18:59:27</i></font>
+<a name="6"><font color="#888888 "><i>    6   </i></font></a><font color="#117755"><i>//</i></font>
+<a name="7"><font color="#888888 "><i>    7   </i></font></a><font color="#992211">#</font><font color="#992211"><b>ifndef</b></font> __MATLAB_MLDIVIDE_EMXAPI_H__
+<a name="8"><font color="#888888 "><i>    8   </i></font></a><font color="#992211">#</font><font color="#992211"><b>define</b></font> __MATLAB_MLDIVIDE_EMXAPI_H__
+<a name="9"><font color="#888888 "><i>    9   </i></font></a>
+<a name="10"><font color="#888888 "><i>   10   </i></font></a><font color="#117755"><i>// Include Files</i></font>
+<a name="11"><font color="#888888 "><i>   11   </i></font></a><font color="#992211">#</font><font color="#992211"><b>include</b></font> <font color="#992211">&lt;math.h&gt;</font>
+<a name="12"><font color="#888888 "><i>   12   </i></font></a><font color="#992211">#</font><font color="#992211"><b>include</b></font> <font color="#992211">&lt;stddef.h&gt;</font>
+<a name="13"><font color="#888888 "><i>   13   </i></font></a><font color="#992211">#</font><font color="#992211"><b>include</b></font> <font color="#992211">&lt;stdlib.h&gt;</font>
+<a name="14"><font color="#888888 "><i>   14   </i></font></a><font color="#992211">#</font><font color="#992211"><b>include</b></font> <font color="#992211">&lt;string.h&gt;</font>
+<a name="15"><font color="#888888 "><i>   15   </i></font></a><font color="#992211">#</font><font color="#992211"><b>include</b></font> <font color="#992211">&quot;rt_nonfinite.h&quot;</font>
+<a name="16"><font color="#888888 "><i>   16   </i></font></a><font color="#992211">#</font><font color="#992211"><b>include</b></font> <font color="#992211">&quot;rtwtypes.h&quot;</font>
+<a name="17"><font color="#888888 "><i>   17   </i></font></a><font color="#992211">#</font><font color="#992211"><b>include</b></font> <font color="#992211">&quot;matlab_mldivide_types.h&quot;</font>
+<a name="18"><font color="#888888 "><i>   18   </i></font></a>
+<a name="19"><font color="#888888 "><i>   19   </i></font></a><font color="#117755"><i>// Function Declarations</i></font>
+<a name="20"><font color="#888888 "><i>   20   </i></font></a><font color="#112266"><b>extern</b></font> emxArray_creal_T *<a href="matlab_mldivide_emxAPI_cpp.html#fcn_emxCreateND_creal_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'fcn_emxCreateND_creal_T');" target="_self"><font color="#1122aa">emxCreateND_creal_T</font></a>(<font color="#112266"><b>int</b></font> numDimensions, <font color="#112266"><b>int</b></font> *size);
+<a name="21"><font color="#888888 "><i>   21   </i></font></a><font color="#112266"><b>extern</b></font> emxArray_creal_T *<a href="matlab_mldivide_emxAPI_cpp.html#fcn_emxCreateWrapperND_creal_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'fcn_emxCreateWrapperND_creal_T');" target="_self"><font color="#1122aa">emxCreateWrapperND_creal_T</font></a>(<a href="rtwtypes_h.html#type_creal_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_creal_T');" target="_self"><font color="#1122aa">creal_T</font></a> *data, <font color="#112266"><b>int</b></font>
+<a name="22"><font color="#888888 "><i>   22   </i></font></a>  numDimensions, <font color="#112266"><b>int</b></font> *size);
+<a name="23"><font color="#888888 "><i>   23   </i></font></a><font color="#112266"><b>extern</b></font> emxArray_creal_T *<a href="matlab_mldivide_emxAPI_cpp.html#fcn_emxCreateWrapper_creal_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'fcn_emxCreateWrapper_creal_T');" target="_self"><font color="#1122aa">emxCreateWrapper_creal_T</font></a>(<a href="rtwtypes_h.html#type_creal_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_creal_T');" target="_self"><font color="#1122aa">creal_T</font></a> *data, <font color="#112266"><b>int</b></font> rows, <font color="#112266"><b>int</b></font>
+<a name="24"><font color="#888888 "><i>   24   </i></font></a>  cols);
+<a name="25"><font color="#888888 "><i>   25   </i></font></a><font color="#112266"><b>extern</b></font> emxArray_creal_T *<a href="matlab_mldivide_emxAPI_cpp.html#fcn_emxCreate_creal_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'fcn_emxCreate_creal_T');" target="_self"><font color="#1122aa">emxCreate_creal_T</font></a>(<font color="#112266"><b>int</b></font> rows, <font color="#112266"><b>int</b></font> cols);
+<a name="26"><font color="#888888 "><i>   26   </i></font></a><font color="#112266"><b>extern</b></font> <font color="#112266"><b>void</b></font> <a href="matlab_mldivide_emxAPI_cpp.html#fcn_emxDestroyArray_creal_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'fcn_emxDestroyArray_creal_T');" target="_self"><font color="#1122aa">emxDestroyArray_creal_T</font></a>(emxArray_creal_T *emxArray);
+<a name="27"><font color="#888888 "><i>   27   </i></font></a><font color="#112266"><b>extern</b></font> <font color="#112266"><b>void</b></font> <a href="matlab_mldivide_emxAPI_cpp.html#fcn_emxInitArray_creal_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'fcn_emxInitArray_creal_T');" target="_self"><font color="#1122aa">emxInitArray_creal_T</font></a>(emxArray_creal_T **pEmxArray, <font color="#112266"><b>int</b></font> numDimensions);
+<a name="28"><font color="#888888 "><i>   28   </i></font></a>
+<a name="29"><font color="#888888 "><i>   29   </i></font></a><font color="#992211">#</font><font color="#992211"><b>endif</b></font>
+<a name="30"><font color="#888888 "><i>   30   </i></font></a>
+<a name="31"><font color="#888888 "><i>   31   </i></font></a><font color="#117755"><i>//</i></font>
+<a name="32"><font color="#888888 "><i>   32   </i></font></a><font color="#117755"><i>// File trailer for matlab_mldivide_emxAPI.h</i></font>
+<a name="33"><font color="#888888 "><i>   33   </i></font></a><font color="#117755"><i>//</i></font>
+<a name="34"><font color="#888888 "><i>   34   </i></font></a><font color="#117755"><i>// [EOF]</i></font>
+<a name="35"><font color="#888888 "><i>   35   </i></font></a><font color="#117755"><i>//</i></font>
+<a name="36"><font color="#888888 "><i>   36   </i></font></a></pre>
+</td></tr></table>
+</p>
+</body>
+</html>

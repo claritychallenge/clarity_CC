@@ -1,0 +1,4 @@
+scipy
+numpy
+file:packages/matlab_mldivide
+file:../../lib/clarity_core
