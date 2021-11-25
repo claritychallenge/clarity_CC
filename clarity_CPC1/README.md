@@ -10,7 +10,7 @@ The Clarity code is made available as a GitHub repository. To clone the reposito
 
 ```bash
 git clone https://github.com/claritychallenge/clarity_CC.git
-cd clarity_CC/clarity_CEC1
+cd clarity_CC/clarity_CPC1
 ```
 
 Then see [INSTALL.md](INSTALL.md) for full installation and usage instructions.

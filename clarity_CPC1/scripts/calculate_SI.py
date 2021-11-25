@@ -91,6 +91,7 @@ def calculate_SI(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument("--nsignals", type=int, default=None)
     parser.add_argument("signals_filename", help="json file containing signal_metadata")
     parser.add_argument("clean_input_path", help="path to clean input data")
     parser.add_argument("processed_input_path", help="path to processed input data")
@@ -102,6 +103,10 @@ if __name__ == "__main__":
     f = open(args.output_sii_file, "a")
     writer = csv.writer(f)
     writer.writerow(["scene", "listener", "system", "MBSTOI"])
+
+    # Process the first n signals if the nsignals parameter is set
+    if args.nsignals and args.nsignals > 0:
+        signals = signals[0 : args.nsignals]
 
     for signal in tqdm(signals):
         listener = signal["listener"]

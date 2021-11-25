@@ -107,6 +107,7 @@ def run_HL_processing(scene, listener, system, scenes_input_path, ha_input_path,
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument("--nsignals", type=int, default=None)
     parser.add_argument("scene_list_filename", help="json file containing scene data")
     parser.add_argument("listener_filename", help="json file containing listener data")
     parser.add_argument("signals_filename", help="json file containing signal_metadata")
@@ -119,6 +120,10 @@ if __name__ == "__main__":
     scene_list = json.load(open(args.scene_list_filename, "r"))
     listeners = json.load(open(args.listener_filename, "r"))
     signals = json.load(open(args.signals_filename, "r"))
+
+    # Process the first n signals if the nsignals parameter is set
+    if args.nsignals and args.nsignals > 0:
+        signals = signals[0 : args.nsignals]
 
     for signal in tqdm(signals):
         scene = signal["scene"]

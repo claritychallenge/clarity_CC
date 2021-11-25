@@ -14,9 +14,6 @@ python -m venv env
 source env/bin/activate
 pip install --upgrade pip
 pip install -r requirements-dev.txt
-# Build matlab_mldivide submodule
-cd packages/matlab_mldivide
-python setup.py install
 ```
 
 ## Documentation

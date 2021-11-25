@@ -1,8 +1,6 @@
 import numpy as np
 import math
 
-from matlab_matrix_divide import matrix_divide
-
 FFT_SIZE = 512
 FRAME_SIZE = 256
 SHIFT = 64
@@ -75,7 +73,7 @@ def make_smear_mat3(rl, ru, fs):
 
     # This is equivalent to multiplying (convolving) the inverse of the
     # normal filters with the wide filters.
-    f_smear = np.real(matrix_divide.mldivide(f_next, f_wide))
+    f_smear = np.real(np.linalg.lstsq(f_next, f_wide, rcond=-1)[0])
 
     # Pruning to remove the extra bit
     f_smear = f_smear[0:nyquist, :]
@@ -104,9 +102,7 @@ def smear3(f_smear, inbuffer):
     buffer = np.arange(0, overlaps)
     nyquist = int(FFT_SIZE / 2)
 
-    window = 0.5 - 0.5 * np.cos(
-        2 * np.pi * (np.arange(1, FRAME_SIZE + 1) - 0.5) / FRAME_SIZE
-    )
+    window = 0.5 - 0.5 * np.cos(2 * np.pi * (np.arange(1, FRAME_SIZE + 1) - 0.5) / FRAME_SIZE)
     window = window / math.sqrt(1.5)
 
     samplecount = min(FRAME_SIZE, inlength - inpointer)

@@ -2,7 +2,7 @@
 
 # Script for unpacking clarity data downloads into the clarity root
 #
-# e.g. unpack.sh clarity_CPC1_data.main.v1_0.tgz <TARGET_DIR>
+# e.g. unpack.sh clarity_CPC1_data.main.v1_1.tgz <TARGET_DIR>
 
 PACKAGE_NAME=$1
 TARGET_DIR=$2
@@ -22,7 +22,3 @@ tar -xvzf "$PACKAGE_NAME" -C "$TARGET_DIR" --keep-old-files
     rm clarity_data
     ln -s "$TARGET_DIR"/"$TOP_DIR" clarity_data
 )
-
-# Add the replacement listeners json file
-# The version provided with main data package is missing 5 listeners
-cp $CLARITY_ROOT/install/patched/listeners.CPC1_train.json $CLARITY_ROOT/data/clarity_data/metadata

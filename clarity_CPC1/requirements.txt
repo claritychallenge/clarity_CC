@@ -14,4 +14,3 @@ pyyaml
 -e file:projects/MBSTOI
 -e file:projects/MSBG
 -e file:projects/SceneGenerator
--e file:projects/MSBG/packages/matlab_mldivide
