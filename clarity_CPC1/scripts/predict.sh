@@ -13,7 +13,7 @@ DIRECTORY=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 . "$DIRECTORY"/paths.sh # Set CLARITY_ROOT, CLARITY_DATA and PYTHON_BIN
 
 usage() {
-    echo "Usage: $0 <dataset> "
+    echo "Usage: $0 <DATASET> [<NSIGNALS_TO_PROCESS>]"
     exit 0
 }
 [ $# -eq 0 ] && usage
@@ -31,9 +31,7 @@ dataset=${POSITIONAL[0]}
 nsignals=${POSITIONAL[1]}
 
 # If nsignals is not set, use all signals
-if nsignals==""; then
-    nsignals=0
-fi
+[[ -z $nsignals ]] && nsignals=0
 
 echo $CLARITY_DATA
 echo $CLARITY_ROOT

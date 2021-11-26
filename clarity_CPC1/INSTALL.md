@@ -62,6 +62,6 @@ python3 scripts/check_data.py data/clarity_data/
 
 ## 4. Generate predicted intelligibility scores
 
-A reference objective intelligibility measure is being provided. This measure is based on a combination of a hearing loss model and the MBSTOI intelligibility score. It will be used to select systems to present to the listening panel in the event that there are too many entrants for all to be assessed via listening tests (see Challenge rules).
+A baseline intelligibility model is provided. The model is based on a combination of the MSBG hearing loss model and the MBSTOI intelligibility metric. The same model was previously used in the CEC1 enhancement challenge in the objective evaluation of the hearing aid algorithms that were submitted.
 
-For details on how to run the baseline see `scripts/README.md`.
+For details on how to run the baseline see [scripts/README.md](scripts/README.md).
