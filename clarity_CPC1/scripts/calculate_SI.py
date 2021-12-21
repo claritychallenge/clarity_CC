@@ -89,24 +89,25 @@ def calculate_SI(
     return sii
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--nsignals", type=int, default=None)
-    parser.add_argument("signals_filename", help="json file containing signal_metadata")
-    parser.add_argument("clean_input_path", help="path to clean input data")
-    parser.add_argument("processed_input_path", help="path to processed input data")
-    parser.add_argument("output_sii_file", help="path to output sii csv file")
-    args = parser.parse_args()
+def main(signals_filename, clean_input_path, processed_input_path, output_sii_file, nsignals=None):
+    """Main entry point, being passed command line arguments.
 
-    signals = json.load(open(args.signals_filename, "r"))
+    Args:
+        signals_filename (str): name of json file containing signal_metadata
+        clean_input_path (str): path to clean input data
+        processed_input_path (str): path to processed input data
+        output_sii_file (str): name of output sii csv file
+        nsignals (int, optional): Process first N signals. Defaults to None, implying all.
+    """
+    signals = json.load(open(signals_filename, "r"))
 
-    f = open(args.output_sii_file, "a")
+    f = open(output_sii_file, "a")
     writer = csv.writer(f)
     writer.writerow(["scene", "listener", "system", "MBSTOI"])
 
     # Process the first n signals if the nsignals parameter is set
-    if args.nsignals and args.nsignals > 0:
-        signals = signals[0 : args.nsignals]
+    if nsignals and nsignals > 0:
+        signals = signals[0:nsignals]
 
     for signal in tqdm(signals):
         listener = signal["listener"]
@@ -116,11 +117,29 @@ if __name__ == "__main__":
             scene,
             listener,
             system,
-            args.clean_input_path,
-            args.processed_input_path,
+            clean_input_path,
+            processed_input_path,
             CONFIG.fs,
         )
         writer.writerow([scene, listener, system, sii])
         f.flush()
 
     f.close()
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--nsignals", type=int, default=None)
+    parser.add_argument("signals_filename", help="json file containing signal_metadata")
+    parser.add_argument("clean_input_path", help="path to clean input data")
+    parser.add_argument("processed_input_path", help="path to processed input data")
+    parser.add_argument("output_sii_file", help="name of output sii csv file")
+    args = parser.parse_args()
+
+    main(
+        args.signals_filename,
+        args.clean_input_path,
+        args.processed_input_path,
+        args.output_sii_file,
+        args.nsignals,
+    )

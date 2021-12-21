@@ -1,9 +1,10 @@
 import argparse
 import json
-from tqdm import tqdm
+import logging
 import os
 import sys
-import logging
+
+from tqdm import tqdm
 
 
 def check_files(file_list):
@@ -69,15 +70,23 @@ def check_HA_output_data(data_root, dataset):
     return missing
 
 
+def main(data_root):
+    """Check the integrity of the data.
+
+    Args:
+        data_root (str): Name of data root directory
+    """
+    missing = False
+    missing |= check_scenes_data(data_root, "scenes.CPC1_train")
+    missing |= check_HA_output_data(data_root, "train")
+    missing |= check_HA_output_data(data_root, "train_indep")
+    return missing
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     parser.add_argument("data_root", help="clarity data directory")
     args = parser.parse_args()
-
-    missing = False
-    missing |= check_scenes_data(args.data_root, "scenes.CPC1_train")
-    missing |= check_HA_output_data(args.data_root, "train")
-    missing |= check_HA_output_data(args.data_root, "train_indep")
-
+    missing = main(args.data_root)
     sys.exit(missing)

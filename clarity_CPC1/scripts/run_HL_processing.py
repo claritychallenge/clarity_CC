@@ -105,6 +105,50 @@ def run_HL_processing(scene, listener, system, scenes_input_path, ha_input_path,
         write_signal(filename, signal, CONFIG.fs, floating_point=True)
 
 
+def main(
+    scene_list_filename,
+    listener_filename,
+    signals_filename,
+    scenes_input_path,
+    ha_input_path,
+    output_path,
+    nsignals=None,
+):
+    """Main entry point. Passed the commandline parameters.
+
+    Args:
+        scene_list_filename (str): json file containing scene data
+        listener_filename (str): json file containing listener data
+        signals_filename (str): json file containing signal_metadata
+        scenes_input_path (str): path to unprocessed scene input data
+        ha_input_path (str): path to processed HA input data
+        output_path (str): path to output data
+        nsignals (int, optional): Number of signals to process. None implies all. Defaults to None.
+    """
+    scene_list = json.load(open(scene_list_filename, "r"))
+    listeners = json.load(open(listener_filename, "r"))
+    signals = json.load(open(signals_filename, "r"))
+
+    # Process the first n signals if the n_signals parameter is set
+    if nsignals and nsignals > 0:
+        signals = signals[0:nsignals]
+
+    for signal in tqdm(signals):
+        scene = signal["scene"]
+        listener = listeners[signal["listener"]]
+        system = signal["system"]
+
+        run_HL_processing(
+            scene,
+            listener,
+            system,
+            scenes_input_path,
+            ha_input_path,
+            output_path,
+            CONFIG.fs,
+        )
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--nsignals", type=int, default=None)
@@ -117,25 +161,12 @@ if __name__ == "__main__":
     parser.add_argument("output_path", help="path to output data")
     args = parser.parse_args()
 
-    scene_list = json.load(open(args.scene_list_filename, "r"))
-    listeners = json.load(open(args.listener_filename, "r"))
-    signals = json.load(open(args.signals_filename, "r"))
-
-    # Process the first n signals if the nsignals parameter is set
-    if args.nsignals and args.nsignals > 0:
-        signals = signals[0 : args.nsignals]
-
-    for signal in tqdm(signals):
-        scene = signal["scene"]
-        listener = listeners[signal["listener"]]
-        system = signal["system"]
-
-        run_HL_processing(
-            scene,
-            listener,
-            system,
-            args.scenes_input_path,
-            args.ha_input_path,
-            args.output_path,
-            CONFIG.fs,
-        )
+    main(
+        args.scene_list_filename,
+        args.listener_filename,
+        args.signals_filename,
+        args.scenes_input_path,
+        args.ha_input_path,
+        args.output_path,
+        args.nsignals,
+    )

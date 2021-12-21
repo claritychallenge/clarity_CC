@@ -1,5 +1,71 @@
 # Running the baseline prediction model
 
+The scripts in this directory reproduce our baseline system and use the baseline system outputs to demonstrate how systems will be evaluated.
+
+The top-level script ```run_all.py``` has been heavily documented to make each stage clear. Please see the notes below and then refer to the 
+code for further details.
+## Using the Python scripts
+
+The following tools are provided 
+
+  1. check_data.py -- checks the integrity of the data
+  2. run_HL_processing.py -- runs data through the MSBG hearing loss model
+  3. calculate_SI.py -- runs the MSBG outputs through the MBSTOI intelligibilty model
+  4. predict_intel.py -- maps MBSTOI scores onto intelligibility scores
+  5. report_rmse_score.py -- reports the RMS error metric for the predicted intelligiblity scores
+
+The tools are called in sequence by a top-level script `run_all.py` that runs and evaluates the baseline system
+
+```bash
+python3 run_all.py
+```
+
+By default, the `run_all.py` will skip over the MSBG and MBSTOI calculation stage and uses pre-computed MBSTOI values stored in the `example_data` directory.
+
+If you wish to run the complete model and regenerate the complete set of MBSTOI values from scratch then use.
+
+```bash
+python3 run_all.py --run_baseline
+```
+
+Be warned, this will take a long time to run - perhaps 24 hours. 
+
+If you just wish to run on a small number of signals, i.e. to quickly test the MSBG and MBSTOI code are working then you can call `run_all` as follows.
+
+```bash
+python3 run_all.py --run_baseline --n_signals <N_SIGNALS>
+```
+
+The MBSTOI predictions will appear in a file `mbstoi.train.csv` in this directory. (Note, the final prediction stage will continue to use the precomputed values in `example_data` unless `mbstoi.train.csv` appears to be complete.)
+
+If all runs correctly the script should produce the following output.
+
+```
+❯python3 run_all.py
+Checking files for scenes.CPC1_train
+Checking scenes source files
+100%|█████████████████████████████████████████████████████████████████████████████████████| 1206/1206 [00:00<00:00, 116896.16it/s]
+Checking scenes HA inputs
+100%|█████████████████████████████████████████████████████████████████████████████████████| 4824/4824 [00:00<00:00, 122030.83it/s]
+Checking files for train
+Checking signal files for train
+100%|█████████████████████████████████████████████████████████████████████████████████████| 4863/4863 [00:00<00:00, 133481.45it/s]
+Checking files for train_indep
+Checking signal files for train_indep
+100%|█████████████████████████████████████████████████████████████████████████████████████| 3580/3580 [00:00<00:00, 122125.78it/s]
+Warning: MBSTOI csv file incomplete. Using pre-computed values from example_data/
+Generate intelligibility predictions from raw MBSTOI values
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 57.03it/s]
+Score the predictions
+RMS prediction error: 28.50
+```
+
+The baseline RMS prediction error is 28.50.  i.e. for the baseline system, the RMS error between the actual sentence-level "percentage of words correct" scores and the predicted values is 28.50.
+
+## Using the shell scripts 
+
+**The shell scripts are now obsolete. We recommend using the Python top level scripts detailed in the previous section.**
+
 To run the baseline prediction model call,
 
 ```bash
@@ -16,9 +82,9 @@ If you wish to run it on a reduced number of signals you can run
 ./predict.sh <DATASET> <NUM_SIGNALS>
 ```
 
-e.g. `./predict.sn train 10` will run on the first 10 signals of the train set.
+e.g. `./predict.sh train 10` will run on the first 10 signals of the train set.
 
-The preduct script runs in two stages.
+The predict script runs in two stages.
 
 - Stage 1: It calls a python script called `run_HL_processing.py` which passes all the signals through the MSBG hearing loss model. This stage will write audio files into directories under `clarity_data/HA_outputs`.
 - Stage 2: It calls a python script called `calculate_SI.py` which uses the hearing loss model outputs to compute MBSTOI scores. This stage will accumulate outputs in a csv file called `mbstoi.<DATASET>.csv`

@@ -15,9 +15,7 @@ class ClarityConfig(configparser.ConfigParser):
 
     def __init__(self, config_filename):
 
-        super(ClarityConfig, self).__init__(
-            allow_no_value=True, inline_comment_prefixes=("#")
-        )
+        super(ClarityConfig, self).__init__(allow_no_value=True, inline_comment_prefixes=("#"))
         if config_filename and os.path.exists(config_filename):
             self.clarity_cfg = os.path.abspath(config_filename)
             self.read(self.clarity_cfg)
@@ -63,7 +61,10 @@ class ClarityConfig(configparser.ConfigParser):
         # self.comp_RT = self.getfloat("clarity", "COMP_RT", fallback=0.05)
 
 
-config_filename = None
-if "CLARITY_ROOT" in os.environ:
-    config_filename = f"{os.environ['CLARITY_ROOT']}/clarity.cfg"
+clarity_root = (
+    os.environ["CLARITY_ROOT"]
+    if "CLARITY_ROOT" in os.environ
+    else os.path.dirname(__file__) + "/../../.."
+)
+config_filename = f"{clarity_root}/clarity.cfg"
 CONFIG = ClarityConfig(config_filename)
