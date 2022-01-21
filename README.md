@@ -1,4 +1,4 @@
-# The Clarirty Challenges
+# The Clarity Challenges
 
 In this repository, you will find code to support all Clarity Challenges
 
