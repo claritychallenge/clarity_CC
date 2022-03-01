@@ -7,4 +7,4 @@ In this repository, you will find code to support all Clarity Challenges
 
 Data for the challenges is available separately. See specific instructions in each challenge sub-directory, or visit the challenge website.
 
-For further details of the Clarity Project visit, [clarityproject.org](https://clarityproject.org/).
+For further details of the Clarity Project visit, [claritychallenge.org](https://claritychallenge.org/).
